@@ -11,48 +11,48 @@ const map = L.map('map', {
 });
 map.fitBounds(bounds);
 
-// Information for each building marker
-const buildings = {
+// Information for each map marker
+const markers = {
     immigration: {
         location: [750, 500],
         icon: L.icon({
-            iconUrl: 'assets/img/icons/immigration.png',
+            iconUrl: 'assets/img/immigration.png',
             iconAnchor: [75, 75],
             popupAnchor: [0, -75]
         }),
         title: 'Immigration',
-        hook: 'Coming to Katy from another country?',
+        hook: 'Immigrated to the US?',
         description: 'Find resources to help you settle into the community',
         marker: null
     },
     education: {
         location: [500, 250],
         icon: L.icon({
-            iconUrl: 'assets/img/icons/education.png',
+            iconUrl: 'assets/img/education.png',
             iconAnchor: [75, 75],
             popupAnchor: [0, -75]
         }),
         title: 'Education',
         hook: 'Are you a student?',
-        description: 'Find resources for helping you with school',
+        description: 'Find resources for helping you with your schoolwork',
         marker: null    
     },
     info: {
         location: [500, 500],
         icon: L.icon({
-            iconUrl: 'assets/img/icons/info.png',
+            iconUrl: 'assets/img/info.png',
             iconAnchor: [75, 75],
             popupAnchor: [0, -75]
         }),
         title: 'Katy Aid',
         hook: 'Welcome to Katy!',
-        description: 'Learn more about the resources in our community by moving around the map',
+        description: 'Learn more about the resources in Katy by moving around the map',
         marker: null
     },
     medical: {
         location: [500, 750],
         icon: L.icon({
-            iconUrl: 'assets/img/icons/medical.png',
+            iconUrl: 'assets/img/medical.png',
             iconAnchor: [75, 75],
             popupAnchor: [0, -75]
         }),
@@ -63,34 +63,33 @@ const buildings = {
     }
 };
 
-Object.keys(buildings).forEach(bName => {
-    if (b.name != "info") {
-        const b = buildings[bName];
-        b.marker = L.marker(b.location, {icon: b.icon}).addTo(map);
-        b.marker.bindPopup(`
+Object.keys(markers).forEach(mName => {
+    const m = markers[mName];
+    m.marker = L.marker(m.location, {icon: m.icon}).addTo(map);
+    if (mName != "info") {
+        m.marker.bindPopup(`
             <div class="popup">
-                <h3>${b.title}</h3>
-                <i>${b.hook}</i>
-                <p class="center">${b.description}</p>
-                <a href="${bName}.html"><button>Enter</button></a>
+                <h3>${m.title}</h3>
+                <i>${m.hook}</i>
+                <p class="center">${m.description}</p>
+                <a href="${mName}.html"><button>View Resources</button></a>
             </div>
         `);
     }
     else {
-        const b = buildings["info"];
-        b.marker = L.marker(b.location, {icon: b.icon}).addTo(map);
-        b.marker.bindPopup(`
+        m.marker.bindPopup(`
             <div class="popup">
-                <h3>${b.title}</h3>
-                <i>${b.hook}</i>
-                <p class="center">${b.description}</p>
+                <h3>${m.title}</h3>
+                <i>${m.hook}</i>
+                <p class="center">${m.description}</p>
+                <a href="references.html"><button>View References</button></a>
             </div>
         `);
     }
 });
 
-buildings.townHall.marker.on('click', function(e) {
-    buildings.townHall.marker.openPopup();
+markers.info.marker.on('click', function(e) {
+    markers.info.marker.openPopup();
 });
 map.setView([575, 500], 1);
-buildings.townHall.marker.fire('click');
+markers.info.marker.fire('click');
