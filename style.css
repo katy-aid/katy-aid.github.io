@@ -266,8 +266,8 @@ small img.inline, button.inline img {
 }
 
 .leaflet-marker-icon {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
 }
 
 .popup {

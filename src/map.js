@@ -17,8 +17,8 @@ const markers = {
         location: [750, 500],
         icon: L.icon({
             iconUrl: 'assets/img/immigration.png',
-            iconAnchor: [75, 75],
-            popupAnchor: [0, -75]
+            iconAnchor: [100, 100],
+            popupAnchor: [0, -100]
         }),
         title: 'Immigration',
         hook: 'Immigrated to the US?',
@@ -29,8 +29,8 @@ const markers = {
         location: [500, 250],
         icon: L.icon({
             iconUrl: 'assets/img/education.png',
-            iconAnchor: [75, 75],
-            popupAnchor: [0, -75]
+            iconAnchor: [100, 100],
+            popupAnchor: [0, -100]
         }),
         title: 'Education',
         hook: 'Are you a student?',
@@ -41,8 +41,8 @@ const markers = {
         location: [500, 500],
         icon: L.icon({
             iconUrl: 'assets/img/info.png',
-            iconAnchor: [75, 75],
-            popupAnchor: [0, -75]
+            iconAnchor: [100, 100],
+            popupAnchor: [0, -100]
         }),
         title: 'Katy Aid',
         hook: 'Welcome to Katy!',
@@ -53,8 +53,8 @@ const markers = {
         location: [500, 750],
         icon: L.icon({
             iconUrl: 'assets/img/medical.png',
-            iconAnchor: [75, 75],
-            popupAnchor: [0, -75]
+            iconAnchor: [100, 100],
+            popupAnchor: [0, -100]
         }),
         title: 'Medical',
         hook: 'Looking for medical assistance?',
