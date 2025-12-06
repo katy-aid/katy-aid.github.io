@@ -247,6 +247,11 @@ img.inline.line-start {
     margin: 0 5px 0 0 !important;
 }
 
+section.references {
+    text-indent: -36px;
+    padding-left: 36px;
+}
+
 small img.inline, button.inline img {
     height: 24px;
 }
