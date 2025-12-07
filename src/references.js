@@ -74,43 +74,43 @@ const unformatted = [
     // Image sources
     [
         {
-            preEm: '',
-            em: '',
-            postEm: ''
+            preEm: 'Baba, Yo. “Clock.”',
+            em: 'The Noun Project,',
+            postEm: '21 Dec. 2017, thenounproject.com/icon/clock-1495285.'
         },
         {
-            preEm: '',
-            em: '',
-            postEm: ''
+            preEm: '“Government Building.”',
+            em: 'Beefy Marketing,',
+            postEm: '27 Jan. 2025, beefymarketing.com/industries-we-serve.'
         },
         {
-            preEm: '',
-            em: '',
-            postEm: ''
+            preEm: '“Hospital.”',
+            em: 'VectorPortal,',
+            postEm: '1 Apr. 2022, vectorportal.com/vector/hospital/34993.'
         },
         {
-            preEm: '',
-            em: '',
-            postEm: ''
+            preEm: '“Map Icon.”',
+            em: 'Flaticon,',
+            postEm: '6 Oct. 2016, www.flaticon.com/free-icon/map_235861.'
         },
         {
-            preEm: '',
-            em: '',
-            postEm: ''
+            preEm: 'Meyer, Dave. “Info Icon (Rounded).”',
+            em: 'Openclipart,',
+            postEm: '28 Sept. 2018, openclipart.org/detail/307315/info-icon-rounded.'
         },
         {
-            preEm: '',
-            em: '',
-            postEm: ''
+            preEm: '“School Building.”',
+            em: 'VectorPortal,',
+            postEm: '8 Dec. 2021, vectorportal.com/vector/school-building/34881.'
         }
     ],
 
     // Code references
     [
         {
-            preEm: '',
-            em: '',
-            postEm: ''
+            preEm: '“Markers With Custom Icons.”',
+            em: 'Leaflet,',
+            postEm: 'leafletjs.com/examples/custom-icons. Accessed 6 Dec. 2025.'
         }
     ]
 ];
