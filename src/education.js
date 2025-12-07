@@ -25,8 +25,7 @@ const resources = [
 //     `;
 // }
 
-// White with 50% opacity
-const overlay = 'rgba(255, 255, 255, 0.75)';
-
 // background: imageURL repeat verticalPosition horizontalPosition / size
-document.querySelector('div.resource').style.setProperty('background', `linear-gradient(${overlay}, ${overlay}), url("assets/img/sites/education/0.png") no-repeat top center / cover`, 'important');
+document.querySelector('div.site-img').style.setProperty('background', `url("assets/img/sites/education/0.png") no-repeat top center / cover`, 'important');
+document.querySelector('div.site-img').style.setProperty('height', `calc(100% - 20px - ${window.getComputedStyle(document.querySelector('div.text')).height})`);
+// `calc(100% - ${window.getComputedStyle(document.querySelector('div.text')).height})`
