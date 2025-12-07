@@ -3,24 +3,24 @@
 // Database for medical resources
 const resources = [
     {
-        name: '',
-        url: '',
-        description: ''
+        name: 'Macie Center',
+        url: 'https://www.maciemedical.com/chronic-care-management-katy/',
+        description: 'Aids in chronic illness management and treatment'
     },
     {
-        name: '',
-        url: '',
-        description: ''
+        name: 'Resilience Center of Houston',
+        url: 'https://www.resiliencecenterhouston.com/',
+        description: 'Provides therapy treatment for those dealing with life altering chronic illnesses'
     },
     {
-        name: '',
-        url: '',
-        description: ''
+        name: 're:MIND',
+        url: 'https://www.remindsupport.org/list-of-houston-support-groups/',
+        description: 'Provides an outlet for those struggling with the same problems, allowing them to create a community centered around coping and dealing with symptoms'
     },
     {
-        name: '',
-        url: '',
-        description: ''
+        name: 'Houston Recovery Center',
+        url: 'https://houstonrecoverycenter.org/peer-support-programs-alcohol-drug-abuse/',
+        description: 'Aids those struggling with addiction, providing medical care, therapy, and resources for recovery'
     },
 ];
 
