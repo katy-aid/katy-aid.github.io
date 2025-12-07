@@ -89,6 +89,11 @@ const unformatted = [
             postEm: '1 Apr. 2022, vectorportal.com/vector/hospital/34993.'
         },
         {
+            preEm: 'Lopato, Artur. “External Link.”',
+            em: 'The Noun Project,',
+            postEm: '29 Aug. 2024, thenounproject.com/icon/external-link-7185002.'
+        },
+        {
             preEm: '“Map Icon.”',
             em: 'Flaticon,',
             postEm: '6 Oct. 2016, www.flaticon.com/free-icon/map_235861.'
