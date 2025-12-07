@@ -33,6 +33,7 @@
 a {
     text-decoration: none;
     display: inline-block;
+    margin: auto;
 }
 
 body {
@@ -115,7 +116,7 @@ li {
 }
 
 main {
-    padding: 0 2rem 2rem 2rem;
+    padding: 0 32px 32px 32px;
     max-width: 800px;
     margin: 0 auto;
     min-height: 100vh;
@@ -305,10 +306,10 @@ small img.inline, button.inline img {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    margin: auto;
 }
 
 .card div.text {
-    width: 300px;
     padding: 0px 20px;
 }
 
@@ -351,9 +352,11 @@ small img.inline, button.inline img {
 }
 
 .resource {
-    width: 100%;
+    display: block;
+    width: calc(100% - 64px);
     height: 300px;
     padding: 20px;
+    margin: auto;
 }
 
 .resource a {
@@ -412,4 +415,12 @@ small img.inline, button.inline img {
     opacity: 1;
     transform: scale(1.1);
     transition: all 0.3s;
+}
+
+/*** MEDIA QUERIES ***/
+
+@media screen and (max-width: 865px) {
+    main {
+        width: calc(100vw - 64px);
+    }
 }
