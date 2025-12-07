@@ -121,10 +121,14 @@ let formatted = [];
 // Format each works cited entry into MLA 9th edition citation format
 for (let topicNum = 0; topicNum < unformatted.length; topicNum++) {
     let topic = unformatted[topicNum];
+    let citations = [];
     for (let entryNum = 0; entryNum < topic.length; entryNum++) {
         let entry = topic[entryNum];
-        formatted.push(`<p>${entry.preEm} <em>${entry.em}</em> ${entry.postEm}</p><br>`);
+        citations.push(`<p>${entry.preEm} <em>${entry.em}</em> ${entry.postEm}</p><br>`);
     };
+
+    // Convert array to string to prevent extra trailing comma
+    formatted.push(citations.join(""));
 };
 
 // Populate formatted references in current topic section
