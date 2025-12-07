@@ -22,11 +22,11 @@ const resources = [
 // Populate page with education resources
 for (let i = 0; i < resources.length; i++) {
     let r = resources[i];
-    document.querySelector(`section.education`).innerHTML = `
+    document.querySelector(`section.education`).innerHTML += `
         <div class="resource">
             <a href="${r.url}" target="_blank">
                 <div class="card">
-                    <div class="text">
+                    <div id="text${i}" class="text">
                         <h3>${r.name}</h4>
                         <p>${r.description}</p>
                     </div>
@@ -37,8 +37,8 @@ for (let i = 0; i < resources.length; i++) {
     `;
 
     // Add image of resource site below its name and description
-    document.querySelector(`#site-img${i}`).style.setProperty('background', `url("assets/img/sites/education/0.png") no-repeat top center / cover`, 'important'); // background: imageURL repeat verticalPosition horizontalPosition / size
+    document.querySelector(`#site-img${i}`).style.setProperty('background', `url("assets/img/sites/education/${i}.png") no-repeat top center / cover`, 'important'); // background: imageURL repeat verticalPosition horizontalPosition / size
 
     // Adjust height of resource site image based on overall size of name and description
-    document.querySelector(`#site-img${i}`).style.setProperty('height', `calc(100% - 20px - ${window.getComputedStyle(document.querySelector('div.text')).height})`);
+    document.querySelector(`#site-img${i}`).style.setProperty('height', `calc(100% - 20px - ${window.getComputedStyle(document.querySelector(`#text${i}`)).height})`);
 }
