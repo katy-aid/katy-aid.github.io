@@ -221,6 +221,10 @@ ul, ol {
 
 /*** CLASSES ***/
 
+body.doc {
+    background-color: white;
+}
+
 button.inline {
     box-shadow: none;
     cursor: default;
@@ -264,6 +268,16 @@ div.li {
 
 div.li img.inline.line-start {
     width: 30px !important;
+}
+
+iframe.doc {
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 0px;
+    overscroll-behavior: none;
+    overflow: hidden;
 }
 
 img.external-icon {
