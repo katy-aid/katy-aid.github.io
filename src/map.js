@@ -84,7 +84,10 @@ Object.keys(markers).forEach(mName => {
                 <p class="center">${m.description}</p>
                 <a href="references.html"><button>View References</button></a>
             </div>
-        `);
+        `, {
+            autoClose: false,
+            closeOnClick: false
+        });
     }
 });
 
