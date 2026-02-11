@@ -68,5 +68,21 @@ const local = [
         description: 'A family-friendly community market, featuring local vendors, food trucks, live music, and family activities like face painting'
     }
 ];
-const help = [];
+const help = [
+    {
+        name: 'Katy Area Economic Development Council',
+        url: '',
+        description: 'A nonprofit that fosters economic growth by attracting and expanding high-quality businesses, creating jobs and supporting local companies'
+    },
+    {
+        name: 'Fort Bend Small Business Development Center',
+        url: '',
+        description: 'A nonprofit prodividng free, confidential business consulting and training for small businesses'
+    },
+    {
+        name: "The Governor's Office of Small Business Assistance and the Business Permit Office",
+        url: '',
+        description: 'Provides resources, guidance, and information to help entrepreneurs and small businesses start, operate, and grow in Texas, offering training, funding access, and events'
+    }
+];
 const places = [];
