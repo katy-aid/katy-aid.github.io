@@ -10,3 +10,6 @@
 
 ## All Old Resources
 - Add subcategory headings
+
+## All Resources
+- Consider making height of image consistent and not dependent on height of description

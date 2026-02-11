@@ -77,11 +77,11 @@ for (let i = 0; i < opportunities.length; i++) {
     `;
 
     // Add image of resource site below its name and description
-    document.querySelector(`#site-img${i}`).computedStyleMap.setProperty('background', `url("assets/img/sites/volunteer/${i}.png") no-repeat top center / cover`, 'important'); // background: imageURL repeat verticalPosition horizontalPosition / size
+    document.querySelector(`#site-img${i}`).style.setProperty('background', `url("assets/img/sites/volunteer/${i}.png") no-repeat top center / cover`, 'important'); // background: imageURL repeat verticalPosition horizontalPosition / size
 
     // Access div containing current name and description
     let text = document.querySelector(`#text${i}`);
 
     // Adjust height of resource site image based on overall size of name and description
-    document.querySelector(`#site-img${i}`).computedStyleMap.setProperty('height', `calc(100% - 20px - ${window.getComputedStyle(text).height})`);
+    document.querySelector(`#site-img${i}`).style.setProperty('height', `calc(100% - 20px - ${window.getComputedStyle(text).height})`);
 }
