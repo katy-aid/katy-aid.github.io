@@ -228,6 +228,32 @@ for (let i = 0; i < worship.length; i++) {
     // Adjust height of resource site image based on overall size of name and description
     document.querySelector(`#site-img${i + markets.length - 1}`).style.setProperty('height', `calc(100% - 20px - ${window.getComputedStyle(text).height})`);
 }
-// Fix description placement?
 
 // Populate page with other places
+document.querySelector(`section.cultural`).innerHTML += `<h2 class="subcategory">Other Places</h2>`;
+for (let i = 0; i < other.length; i++) {
+    let r = other[i];
+    document.querySelector(`section.cultural`).innerHTML += `
+        <div class="resource">
+            <a href="${r.url}" target="_blank">
+                <div class="card">
+                    <div id="text${i + markets.length - 1 + worship.length - 1}" class="text">
+                        <h3>${r.name}</h3>
+                        <p>${r.description}</p>
+                    </div>
+                    <div id="site-img${i + markets.length - 1 + worship.length - 1}"
+                    class="site-img"></div>
+                </div>
+            </a>
+        </div>
+    `;
+
+    // Add image of resource site below its name and description
+    document.querySelector(`#site-img${i + markets.length - 1 + worship.length - 1}`).style.setProperty('background', `url("assets/img/sites/cultural/${i + markets.length - 1 + worship.length - 1}.png") no-repeat top center / cover`, 'important'); // background: imageURL repeat verticalPosition horizontalPosition / size
+
+    // Access div containing current name and decription
+    let text = document.querySelector(`#text${i + markets.length - 1 + worship.length - 1}`);
+
+    // Adjust height of resource site image based on overall size of name and description
+    document.querySelector(`#site-img${i + markets.length - 1 + worship.length - 1}`).style.setProperty('height', `calc(100% - 20px - ${window.getComputedStyle(text).height})`);
+}
