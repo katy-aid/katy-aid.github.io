@@ -82,7 +82,43 @@ const help = [
     {
         name: "The Governor's Office of Small Business Assistance and the Business Permit Office",
         url: '',
-        description: 'Provides resources, guidance, and information to help entrepreneurs and small businesses start, operate, and grow in Texas, offering training, funding access, and events'
+        description: 'Provides resources, guidance, and information to help entrepreneurs and small businesses start, operate, and grow'
+    },
+    {
+        name: "Katy Area Chamber of Commerce",
+        url: '',
+        description: 'Business advocacy group, serving businesses by promoting economic growth, offering networking, and providing resources'
+    },
+    {
+        name: 'BNI Cinco Ranch',
+        url: '',
+        description: 'A local chapter of the global Business Network International (BNI) organization, focused on helping business professionals grow their bsuinesses'
+    },
+    {
+        name: "Women's Council of Entrepreneurs (WCE) - Katy Chapter",
+        url: '',
+        description: 'Connects local women business owners in a supportive, trust-building community through events and by offering resources and networking'
+    },
+    {
+        name: 'POPUPSHOPS',
+        url: '',
+        description: 'An online marketplace connecting brands and retailers with landlords to find and book short-term, flexible retail spaces'
     }
 ];
-const places = [];
+const places = [
+    {
+        name: 'Smith Ranch',
+        url: '',
+        description: 'Hosts large-scale community events and actively recruits food trucks, small businesses, and artisans'
+    },
+    {
+        name: 'Thrive Creative Artisan Market',
+        url: '',
+        description: 'A curated market seeking artisans and small businesses for specific dates'
+    },
+    {
+        name: 'La Centerra',
+        url: '',
+        description: 'A popular outdoor shopping center that hosts large seasonal markets and events, offering spots for local vendors, pop-ups, and small businesses'
+    }
+];
