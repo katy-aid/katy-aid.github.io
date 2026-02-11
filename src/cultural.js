@@ -160,5 +160,5 @@ for (let i = 0; i < markets.length; i++) {
     let text = document.querySelector(`#text${i}`);
 
     // Adjust height of resource site image based on overall size of name and desccription
-    document.querySelector(`#site-img${i}`).style.setProperty('height', `calc(100% - 20px - ${window.getComputerStyle(text).height})`);
+    document.querySelector(`#site-img${i}`).style.setProperty('height', `calc(100% - 20px - ${window.getComputedStyle(text).height})`);
 }
