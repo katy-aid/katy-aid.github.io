@@ -134,7 +134,44 @@ const worship = [
         url: '',
         description: 'A reform synagogue located near Katy, known for being warm, friendly inclusive, and welcoming to interfaith families, with services and activities for all ages'
     }
-]
+];
+const other = [
+    {
+        name: 'Katy Asian Town',
+        url: '',
+        description: 'Shopping center with an Asian supermarket and eateries for dim sum, poke, noodles, hot pot, and more'
+    },
+    {
+        name: 'Bonjour and Bienvenue French Hub',
+        url: '',
+        description: 'French language classes and cultural meetups'
+    },
+    {
+        name: 'Crossing Borders Language Center',
+        url: '',
+        description: 'Language school that offers a variety of languages and teaches ESL classes'
+    },
+    {
+        name: 'Spanish Schoolhouse',
+        url: '',
+        description: 'Spanish preschool language immersion spot'
+    },
+    {
+        name: 'Katy Korean School',
+        url: '',
+        description: 'Korean language and culture education center'
+    },
+    {
+        name: 'Happy Mandarin',
+        url: '',
+        description: 'Mandarin language and immersion classes'
+    },
+    {
+        name: 'Upasana Kalakendra',
+        url: '',
+        description: 'Cultural dance studio specializing in South Asian dance styles'
+    }
+];
 
 // Populate page with markets
 document.querySelector(`section.cultural`).innerHTML += `<h2 class="subcategory">Markets</h2>`;
@@ -163,3 +200,34 @@ for (let i = 0; i < markets.length; i++) {
     // Adjust height of resource site image based on overall size of name and desccription
     document.querySelector(`#site-img${i}`).style.setProperty('height', `calc(100% - 20px - ${window.getComputedStyle(text).height})`);
 }
+
+// Populate page with worship places
+document.querySelector(`section.cultural`).innerHTML += `<h2 class="subcategory">Worship Places</h2>`;
+for (let i = 0; i < worship.length; i++) {
+    let r = worship[i];
+    document.querySelector(`section.cultural`).innerHTML += `
+        <div class="resource">
+            <a href="${r.url}" target="_blank">
+                <div class="card">
+                    <div id="text${i}" class="text">
+                        <h3>${r.name}</h3>
+                        <p>${r.description}</p>
+                    </div>
+                    <div id="site-img${i}" class="site-img"></div>
+                </div>
+            </a>
+        </div>
+    `;
+
+    // Add image of resource site below its name and description
+    document.querySelector(`#site-img${i}`).style.setProperty('background', `url("assets/img/sites/cultural/${i}.png") no-repeat top center / cover`, 'important'); // background: imageURL repeat verticalPosition horizontalPosition / size
+
+    // Access div containing current name and description
+    let text = document.querySelector(`#text${i}`);
+
+    // Adjust height of resource site image based on overall size of name and description
+    document.querySelector(`#site-img${i}`).style.setProperty('height', `calc(100% - 20px - ${window.getComputedStyle(text).height})`);
+}
+// Fix description placement?
+
+// Populate page with other places
