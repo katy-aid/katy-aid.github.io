@@ -139,5 +139,26 @@ const worship = [
 // Populate page with markets
 for (let i = 0; i < markets.length; i++) {
     let r = markets[i];
-    document.querySelector(`section.cultural`).innerHTML += ``;
+    document.querySelector(`section.cultural`).innerHTML += `
+        <div class="resource">
+            <a href="${r.url}" target="_blank">
+                <div class="card">
+                    <div id="text${i}" class="text">
+                        <h3>${r.name}</h3>
+                        <p>${r.description}</h3>
+                    </div>
+                    <div id="site-img${i}" class="site-img"></div>
+                </div>
+            </a>
+        </div>
+    `;
+
+    // Add image of resource site below its name and description
+    document.querySelector(`#site-img${i}`).style.setProperty('background', `url("assets/img/sites/cultural/${i}.png") no-repeat top center / cover`, 'important'); // background: imageURL repeat verticalPosition horizontalPosition / size
+
+    // Access div containing current name and desccription
+    let text = document.querySelector(`#text${i}`);
+
+    // Adjust height of resource site image based on overall size of name and desccription
+    document.querySelector(`#site-img${i}`).style.setProperty('height', `calc(100% - 20px - ${window.getComputerStyle(text).height})`);
 }

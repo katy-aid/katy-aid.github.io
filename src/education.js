@@ -27,7 +27,7 @@ for (let i = 0; i < resources.length; i++) {
             <a href="${r.url}" target="_blank">
                 <div class="card">
                     <div id="text${i}" class="text">
-                        <h3>${r.name}</h4>
+                        <h3>${r.name}</h3>
                         <p>${r.description}</p>
                     </div>
                     <div id="site-img${i}" class="site-img"></div>
