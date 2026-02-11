@@ -122,3 +122,34 @@ const places = [
         description: 'A popular outdoor shopping center that hosts large seasonal markets and events, offering spots for local vendors, pop-ups, and small businesses'
     }
 ];
+
+// Populate page with local/family-run businesses
+document.querySelector(`section.businesses`).innerHTML += `<h2 class="subcategory">Local and Family-Run Businesses</h2>`;
+for (let i = 0; i < local.length; i++) {
+    let r = local[i];
+    document.querySelector(`section.businesses`).innerHTML += `
+        <div class="resource">
+            <a href="${r.url}" target="_blank">
+                <div class="card">
+                    <div id="text${i}" class="text">
+                        <h3>${r.name}</h3>
+                        <p>${r.description}</h3>
+                    </div>
+                    <div id="site-img${i}" class="site-img"></div>
+                </div>
+            </a>
+        </div>
+    `;
+
+    // Add image of resource site below its name and description
+    document.querySelector(`#site-img${i}`).style.setProperty('background', `url("assets/img/sites/businesses/${i}.png") no-repeat top center / cover`, 'important'); // background: imageURL repeat verticalPosition horizontalPosition / size
+
+    // Access div containing current name and description
+    let text = document.querySelector(`#text${i}`);
+
+    // Adjust height of resource site image based on overall size of name and description
+    document.querySelector(`#site-img${i}`).style.setProperty('height', `calc(100% - 20px - ${window.getComputedStyle(text).height})`);
+}
+
+// Populate page with help in starting a small businesses
+document.querySelector(`section.businesses`).innerHTML += `<h2 class="subcategory">Help in Starting a Small Business</h2>`;
