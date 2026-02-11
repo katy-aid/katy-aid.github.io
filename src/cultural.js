@@ -135,3 +135,9 @@ const worship = [
         description: 'A reform synagogue located near Katy, known for being warm, friendly inclusive, and welcoming to interfaith families, with services and activities for all ages'
     }
 ]
+
+// Populate page with markets
+for (let i = 0; i < markets.length; i++) {
+    let r = markets[i];
+    document.querySelector(`section.cultural`).innerHTML += ``;
+}
