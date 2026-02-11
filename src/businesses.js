@@ -153,3 +153,28 @@ for (let i = 0; i < local.length; i++) {
 
 // Populate page with help in starting a small businesses
 document.querySelector(`section.businesses`).innerHTML += `<h2 class="subcategory">Help in Starting a Small Business</h2>`;
+for (let i = 0; i < help.length; i++) {
+    let r = help[i];
+    document.querySelector(`section.businesses`).innerHTML += `
+        <div class="resource">
+            <a  href="${r.url}" target="_blank">
+                <div class="card">
+                    <div id="text${i + local.length - 1}" class="text">
+                        <h3>${r.name}</h3>
+                        <p>${r.description}</p>
+                    </div>
+                    <div id="site-img${i + local.length - 1}" class="site-img"></div>
+                </div>
+            </a>
+        </div>
+    `;
+
+    // Add image of resource site below its name and description
+    document.querySelector(`#site-img${i + local.length - 1}`).style.setProperty('background', `url("assets/img/sites/businesses/${i + local.length - 1}.png") no-repeat top center / cover`, 'important'); // background: imageURL repeat verticalPosition horizontalPosition / size
+
+    // Access div containing current name and description
+    let text = document.querySelector(`#text${i + local.length - 1}`);
+
+    // Adjust height of resource site image based on overall size of name and description
+    document.querySelector(`#site-img${i + local.length - 1}`).style.setProperty('height', `calc(100% - 20px - ${window.getComputedStyle(text).height})`);
+}
