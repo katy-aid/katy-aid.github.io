@@ -20,6 +20,41 @@ const opportunities = [
     {
         name: 'Katy Christian Ministries',
         url: '',
-        description: 'Nonprofit that offers emergency financial assistance and resiliency programs, a Food Pantry dedicated to eradicating hunger, a Crisis Center that houses the Domestic Abuse Center and the Sexual Assault Center, and Resale Stores / Donation Center'
+        description: 'Nonprofit that offers emergency financial assistance and resiliency programs'
+    },
+    {
+        name: 'Christ Clinic',
+        url: '',
+        description: 'Nonprofit that offers high quality healthcare and health-related services to those who are uninsured or underinsured'
+    },
+    {
+        name: 'Memorial Hermann Katy Hospital',
+        url: '',
+        description: 'Provides clinical expertise, patient-centered care, and leading-edge technology'
+    },
+    {
+        name: "Cinco Ranch Alzheimer's Special Care Center",
+        url: '',
+        description: "Retirement community dedicated to providing memory care in a secure, supportive environment designed for individuals living with Alzheimer's and dementia"
+    },
+    {
+        name: 'Legacy at Falcon Point',
+        url: '',
+        description: 'Assisted living and memory care community providing personalized support with daily activities such as line dancing and yoga'
+    },
+    {
+        name: 'Keep Encouraging Youth toward Success (KEYS) Mentoring',
+        url: '',
+        description: 'Katy ISD program that primarily focusees on relationship building, rather than tutoring between a mentor and student'
+    },
+    {
+        name: 'Katy Heritage Society',
+        url: '',
+        description: 'Nonprofit dedicated to furthering the educational and cultural development of the community by preserving, restoring, and displaying historical landmarks, natural beauty, documents'
+    },
+    {
+        name: "Krause Children's Center",
+        url: '',
+        description: 'Offers a nurturing and temporary haven for hundreds of unaccommpanied children annually, providing them with solace, safety, and a pathway to healing after their journey across the Souther border'
     }
 ];
