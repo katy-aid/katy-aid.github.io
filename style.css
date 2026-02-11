@@ -4,7 +4,7 @@
     --blue: #75d8ff;
     --blueTransp: #75d8ff75;
     --green: #91DFAB;
-    --green: #91DFAB75;
+    --greenTransp: #91DFAB75;
 }
 
 /*** FONTS ***/
@@ -268,6 +268,10 @@ div.li {
 
 div.li img.inline.line-start {
     width: 30px !important;
+}
+
+h2.subcategory {
+    background-color: var(--blue);
 }
 
 iframe.doc {

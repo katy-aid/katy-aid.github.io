@@ -137,6 +137,7 @@ const worship = [
 ]
 
 // Populate page with markets
+document.querySelector(`section.cultural`).innerHTML += `<h2 class="subcategory">Markets</h2>`;
 for (let i = 0; i < markets.length; i++) {
     let r = markets[i];
     document.querySelector(`section.cultural`).innerHTML += `
