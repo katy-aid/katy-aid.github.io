@@ -159,24 +159,24 @@ for (let i = 0; i < help.length; i++) {
         <div class="resource">
             <a href="${r.url}" target="_blank">
                 <div class="card">
-                    <div id="text${i + local.length - 1}" class="text">
+                    <div id="text${i + local.length}" class="text">
                         <h3>${r.name}</h3>
                         <p>${r.description}</p>
                     </div>
-                    <div id="site-img${i + local.length - 1}" class="site-img"></div>
+                    <div id="site-img${i + local.length}" class="site-img"></div>
                 </div>
             </a>
         </div>
     `;
 
     // Add image of resource site below its name and description
-    document.querySelector(`#site-img${i + local.length - 1}`).style.setProperty('background', `url("assets/img/sites/businesses/${i + local.length - 1}.png") no-repeat top center / cover`, 'important'); // background: imageURL repeat verticalPosition horizontalPosition / size
+    document.querySelector(`#site-img${i + local.length}`).style.setProperty('background', `url("assets/img/sites/businesses/${i + local.length}.png") no-repeat top center / cover`, 'important'); // background: imageURL repeat verticalPosition horizontalPosition / size
 
     // Access div containing current name and description
-    let text = document.querySelector(`#text${i + local.length - 1}`);
+    let text = document.querySelector(`#text${i + local.length}`);
 
     // Adjust height of resource site image based on overall size of name and description
-    document.querySelector(`#site-img${i + local.length - 1}`).style.setProperty('height', `calc(100% - 20px - ${window.getComputedStyle(text).height})`);
+    document.querySelector(`#site-img${i + local.length}`).style.setProperty('height', `calc(100% - 20px - ${window.getComputedStyle(text).height})`);
 }
 
 // Populate page with places to set up local vendors, pop-ups, small businesses, etc
@@ -187,22 +187,22 @@ for (let i = 0; i < places.length; i++) {
         <div class="resource">
             <a href="${r.url}" target="_blank">
                 <div class="card">
-                    <div id="text${i + local.length - 1 + help.length - 1}" class="text">
+                    <div id="text${i + local.length + help.length}" class="text">
                         <h3>${r.name}</h3>
                         <p>${r.description}</p>
                     </div>
-                    <div id="site-img${i + local.length - 1 + help.length - 1}" class="site-img"></div>
+                    <div id="site-img${i + local.length + help.length}" class="site-img"></div>
                 </div>
             </a>
         </div>
     `;
 
     // Add image of resource site below its name and description
-    document.querySelector(`#site-img${i + local.length - 1 + help.length - 1}`).style.setProperty('background', `url("assets/img/sites/businesses/${i + local.length - 1 + help.length - 1}.png") no-repeat top center / cover`, 'important'); // background: imageURL repeat verticalPosition horizontalPosition / size
+    document.querySelector(`#site-img${i + local.length + help.length}`).style.setProperty('background', `url("assets/img/sites/businesses/${i + local.length + help.length}.png") no-repeat top center / cover`, 'important'); // background: imageURL repeat verticalPosition horizontalPosition / size
 
     // Access div containing current name and description
-    let text = document.querySelector(`#text${i + local.length - 1 + help.length - 1}`);
+    let text = document.querySelector(`#text${i + local.length + help.length}`);
 
     // Adjust height of resource site image based on overall size of name and description
-    document.querySelector(`#site-img${i + local.length - 1 + help.length - 1}`).style.setProperty('height', `calc(100% - 20px - ${window.getComputedStyle(text).height})`);
+    document.querySelector(`#site-img${i + local.length + help.length}`).style.setProperty('height', `calc(100% - 20px - ${window.getComputedStyle(text).height})`);
 }

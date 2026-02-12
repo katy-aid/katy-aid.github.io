@@ -209,24 +209,24 @@ for (let i = 0; i < worship.length; i++) {
         <div class="resource">
             <a href="${r.url}" target="_blank">
                 <div class="card">
-                    <div id="text${i + markets.length - 1}" class="text">
+                    <div id="text${i + markets.length}" class="text">
                         <h3>${r.name}</h3>
                         <p>${r.description}</p>
                     </div>
-                    <div id="site-img${i + markets.length - 1}" class="site-img"></div>
+                    <div id="site-img${i + markets.length}" class="site-img"></div>
                 </div>
             </a>
         </div>
     `;
 
     // Add image of resource site below its name and description
-    document.querySelector(`#site-img${i + markets.length - 1}`).style.setProperty('background', `url("assets/img/sites/cultural/${i + markets.length - 1}.png") no-repeat top center / cover`, 'important'); // background: imageURL repeat verticalPosition horizontalPosition / size
+    document.querySelector(`#site-img${i + markets.length}`).style.setProperty('background', `url("assets/img/sites/cultural/${i + markets.length}.png") no-repeat top center / cover`, 'important'); // background: imageURL repeat verticalPosition horizontalPosition / size
 
     // Access div containing current name and description
-    let text = document.querySelector(`#text${i + markets.length - 1}`);
+    let text = document.querySelector(`#text${i + markets.length}`);
 
     // Adjust height of resource site image based on overall size of name and description
-    document.querySelector(`#site-img${i + markets.length - 1}`).style.setProperty('height', `calc(100% - 20px - ${window.getComputedStyle(text).height})`);
+    document.querySelector(`#site-img${i + markets.length}`).style.setProperty('height', `calc(100% - 20px - ${window.getComputedStyle(text).height})`);
 }
 
 // Populate page with other places
@@ -237,11 +237,11 @@ for (let i = 0; i < other.length; i++) {
         <div class="resource">
             <a href="${r.url}" target="_blank">
                 <div class="card">
-                    <div id="text${i + markets.length - 1 + worship.length - 1}" class="text">
+                    <div id="text${i + markets.length + worship.length}" class="text">
                         <h3>${r.name}</h3>
                         <p>${r.description}</p>
                     </div>
-                    <div id="site-img${i + markets.length - 1 + worship.length - 1}"
+                    <div id="site-img${i + markets.length + worship.length}"
                     class="site-img"></div>
                 </div>
             </a>
@@ -249,11 +249,11 @@ for (let i = 0; i < other.length; i++) {
     `;
 
     // Add image of resource site below its name and description
-    document.querySelector(`#site-img${i + markets.length - 1 + worship.length - 1}`).style.setProperty('background', `url("assets/img/sites/cultural/${i + markets.length - 1 + worship.length - 1}.png") no-repeat top center / cover`, 'important'); // background: imageURL repeat verticalPosition horizontalPosition / size
+    document.querySelector(`#site-img${i + markets.length + worship.length}`).style.setProperty('background', `url("assets/img/sites/cultural/${i + markets.length + worship.length}.png") no-repeat top center / cover`, 'important'); // background: imageURL repeat verticalPosition horizontalPosition / size
 
     // Access div containing current name and decription
-    let text = document.querySelector(`#text${i + markets.length - 1 + worship.length - 1}`);
+    let text = document.querySelector(`#text${i + markets.length + worship.length}`);
 
     // Adjust height of resource site image based on overall size of name and description
-    document.querySelector(`#site-img${i + markets.length - 1 + worship.length - 1}`).style.setProperty('height', `calc(100% - 20px - ${window.getComputedStyle(text).height})`);
+    document.querySelector(`#site-img${i + markets.length + worship.length}`).style.setProperty('height', `calc(100% - 20px - ${window.getComputedStyle(text).height})`);
 }
