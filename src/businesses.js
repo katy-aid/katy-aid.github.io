@@ -157,7 +157,7 @@ for (let i = 0; i < help.length; i++) {
     let r = help[i];
     document.querySelector(`section.businesses`).innerHTML += `
         <div class="resource">
-            <a  href="${r.url}" target="_blank">
+            <a href="${r.url}" target="_blank">
                 <div class="card">
                     <div id="text${i + local.length - 1}" class="text">
                         <h3>${r.name}</h3>

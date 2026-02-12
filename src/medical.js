@@ -1,7 +1,7 @@
 /*** MEDICAL ***/
 
 // Database for medical resources
-const resources = [
+const chronic = [
     {
         name: 'Macie Center',
         url: 'https://www.maciemedical.com/chronic-care-management-katy/',
@@ -11,7 +11,9 @@ const resources = [
         name: 'Resilience Center of Houston',
         url: 'https://www.resiliencecenterhouston.com/',
         description: 'Provides therapy treatment for those dealing with life altering chronic illnesses'
-    },
+    }
+];
+const rehab = [
     {
         name: 're:MIND',
         url: 'https://www.remindsupport.org/list-of-houston-support-groups/',
@@ -24,9 +26,10 @@ const resources = [
     },
 ];
 
-// Populate page with medical resources
-for (let i = 0; i < resources.length; i++) {
-    let r = resources[i];
+// Populate page with chronic disease support
+document.querySelector(`section.medical`).innerHTML += `<h2 class="subcategory">Chronic Disease Support</h2>`;
+for (let i = 0; i < chronic.length; i++) {
+    let r = chronic[i];
     document.querySelector(`section.medical`).innerHTML += `
         <div class="resource">
             <a href="${r.url}" target="_blank">
@@ -49,4 +52,32 @@ for (let i = 0; i < resources.length; i++) {
 
     // Adjust height of resource site image based on overall size of name and description
     document.querySelector(`#site-img${i}`).style.setProperty('height', `calc(100% - 20px - ${window.getComputedStyle(text).height})`);
+}
+
+// Populate page with rehabilitation resources
+document.querySelector(`section.medical`).innerHTML += `<h2 class="subcategory">Rehabilitation</h2>`;
+for (let i = 0; i < rehab.length; i++) {
+    let r = rehab[i];
+    document.querySelector(`section.medical`).innerHTML += `
+        <div class="resource">
+            <a href="${r.url}" target="_blank">
+                <div class="card">
+                    <div id="text${i + chronic.length - 1}" class="text">
+                        <h3>${r.name}</h3>
+                        <p>${r.description}</p>
+                    </div>
+                    <div id="site-img${i + chronic.length - 1}" class="site-img"></div>
+                </div>
+            </a>
+        </div>
+    `;
+
+    // Add image of resource site below its name and description
+    document.querySelector(`#site-img${i + chronic.length - 1}`).style.setProperty('background', `url("assets/img/sites/medical/${i + chronic.length - 1}.png") no-repeat top center / cover`, 'important'); // background: imageURL repeat verticalPosition horizontalPosition / size
+
+    // Access div containing current name and description
+    let text = document.querySelector(`#text${i + chronic.length - 1}`);
+
+    // Adjust height of resource site image based on overall size of name and description
+    document.querySelector(`#site-img${i + chronic.length - 1}`).style.setProperty('height', `calc(100% - 20px - ${window.getComputedStyle(text).height})`);
 }
