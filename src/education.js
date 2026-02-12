@@ -1,7 +1,7 @@
 /*** EDUCATION ***/
 
 // Database for education resources
-const resources = [
+const tutoring = [
     {
         name: 'Fort Bend Public Libraries',
         url: 'https://www.fortbendlibraries.gov/',
@@ -19,9 +19,10 @@ const resources = [
     }
 ];
 
-// Populate page with education resources
-for (let i = 0; i < resources.length; i++) {
-    let r = resources[i];
+// Populate page with tutoring help
+document.querySelector(`section.education`).innerHTML += `<h2 class="subcategory">Tutoring Help</h2>`;
+for (let i = 0; i < tutoring.length; i++) {
+    let r = tutoring[i];
     document.querySelector(`section.education`).innerHTML += `
         <div class="resource">
             <a href="${r.url}" target="_blank">
