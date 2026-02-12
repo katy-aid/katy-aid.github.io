@@ -1,7 +1,7 @@
 /*** MEDICAL ***/
 
 // Database for medical resources
-const chronic = [
+const diseases = [
     {
         name: 'Macie Center',
         url: 'https://www.maciemedical.com/chronic-care-management-katy/',
@@ -11,6 +11,46 @@ const chronic = [
         name: 'Resilience Center of Houston',
         url: 'https://www.resiliencecenterhouston.com/',
         description: 'Provides therapy treatment for those dealing with life altering chronic illnesses'
+    },
+    {
+        name: 'Medical Office of Katy, Internal Medicine Practice',
+        url: '',
+        description: 'Medical office run by Internist Dr. Humera internal who specializing in primary care medicine and preventive and chronic health care'
+    },
+    {
+        name: 'Hulu Health',
+        url: '',
+        description: 'Medical clinic that provides primary care, physical therapy, and acupuncture to all ages'
+    },
+    {
+        name: 'UT Physicians Multispecialty',
+        url: '',
+        description: 'Multispecialty clinic that offers primary and specialty care for children, adolescents, and adults'
+    },
+    {
+        name: 'CLS Health Pain Management Associates',
+        url: '',
+        description: 'Pain management specialists for chronic pain support'
+    },
+    {
+        name: 'FYZICAL Therapy and Balance Center',
+        url: '',
+        description: 'Physical therapy and rehabilitation clinic that provides individualized treatment focused on restoring movement and improving balance'
+    },
+    {
+        name: "Cinco Ranch Alzheimer's Special Care Center",
+        url: '',
+        description: "Retirement community dedicated to providing memory care in a secure, supportive environment designed for individuals living with Alzheimer's and dementia"
+    },
+    {
+        name: 'Airrosti',
+        url: '',
+        description: 'A healthcare group that employs and trains providers specialized in delivering high quality, outcome-based musculoskeletal care and pain  management'
+    },
+    {
+        name: 'Encompass Health Rehabilitation Hospital',
+        url: '',
+        description: 'Specialized healthcare facility focused on inpatient rehabilitation care after strokes, traumatic injuries and other neurological conditions'
     }
 ];
 const addiction = [
@@ -56,10 +96,10 @@ const addiction = [
     }
 ];
 
-// Populate page with chronic disease support
-document.querySelector(`section.medical`).innerHTML += `<h2 class="subcategory">Chronic Disease Support</h2>`;
-for (let i = 0; i < chronic.length; i++) {
-    let r = chronic[i];
+// Populate page with chronic and degenerative disease support
+document.querySelector(`section.medical`).innerHTML += `<h2 class="subcategory">Chronic and Degenerative Disease Support</h2>`;
+for (let i = 0; i < diseases.length; i++) {
+    let r = diseases[i];
     document.querySelector(`section.medical`).innerHTML += `
         <div class="resource">
             <a href="${r.url}" target="_blank">
