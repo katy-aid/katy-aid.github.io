@@ -13,7 +13,7 @@ const chronic = [
         description: 'Provides therapy treatment for those dealing with life altering chronic illnesses'
     }
 ];
-const rehab = [
+const addiction = [
     {
         name: 're:MIND',
         url: 'https://www.remindsupport.org/list-of-houston-support-groups/',
@@ -24,6 +24,36 @@ const rehab = [
         url: 'https://houstonrecoverycenter.org/peer-support-programs-alcohol-drug-abuse/',
         description: 'Aids those struggling with addiction, providing medical care, therapy, and resources for recovery'
     },
+    {
+        name: 'Positive Recovery Centers - Katy',
+        url: '',
+        description: 'Addiction treatment center, providing outpatient care, group counseling, family support, and aftercare program'
+    },
+    {
+        name: 'New Dimensions Day Treatment Center',
+        url: '',
+        description: 'Offers structured day treatment and support services for recovery'
+    },
+    {
+        name: 'Positive Recovery Center',
+        url: '',
+        description: 'Addiction treatment center that offers a wide variety of outpatient care'
+    },
+    {
+        name: 'Drug Detox',
+        url: '',
+        description: 'Local site focused on detox and initial recovery support'
+    },
+    {
+        name: 'The Recovery Therapist',
+        url: '',
+        description: 'Addiction support program run by a specialist in private and custom substance abuse psychotherapy services'
+    },
+    {
+        name: 'Alcoholics Anonymous',
+        url: '',
+        description: 'Global, peer-led mutual-aid fellowship focused on abstinence-based recovery from alcoholism through it spiritually inclined Twelve Steps that hosts many meetings in Katy'
+    }
 ];
 
 // Populate page with chronic disease support
@@ -54,10 +84,10 @@ for (let i = 0; i < chronic.length; i++) {
     document.querySelector(`#site-img${i}`).style.setProperty('height', `calc(100% - 20px - ${window.getComputedStyle(text).height})`);
 }
 
-// Populate page with rehabilitation resources
-document.querySelector(`section.medical`).innerHTML += `<h2 class="subcategory">Rehabilitation</h2>`;
-for (let i = 0; i < rehab.length; i++) {
-    let r = rehab[i];
+// Populate page with addiction recovery and support resources
+document.querySelector(`section.medical`).innerHTML += `<h2 class="subcategory">Addiction Recovery and Support</h2>`;
+for (let i = 0; i < addiction.length; i++) {
+    let r = addiction[i];
     document.querySelector(`section.medical`).innerHTML += `
         <div class="resource">
             <a href="${r.url}" target="_blank">
