@@ -111,9 +111,22 @@ const esl = [
     },
     {
         name: 'St. Bartholomew Catholic Church',
-        url: 'Offers morning and evening ESL classes'
+        url: '',
+        description: 'Offers morning and evening ESL classes'
     }
 ];
+const adult = [
+    {
+        name: 'Katy ISD Community Education',
+        url: '',
+        description: 'Offers non-credit adult education courses virtually in topics like computer, language, wellness, arts, and career skills'
+    },
+    {
+        name: 'Lone Star College-Cypress Center',
+        url: '',
+        description: 'Community college that offers a wide range of adult education and workforce training programs'
+    }
+]
 
 // Populate page with tutoring help
 document.querySelector(`section.education`).innerHTML += `<h2 class="subcategory">Tutoring Help</h2>`;
