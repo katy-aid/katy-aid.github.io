@@ -78,6 +78,42 @@ const tutoring = [
         description: 'Learning center that offers tutoring and test preparation services'
     }
 ];
+const esl = [
+    {
+        name: '123AmericanEnglish',
+        url: '',
+        description: 'Private language academy that specializes in teaching English as a second language to speakers of other languages by offering flexible course options'
+    },
+    {
+        name: 'Crossing Borders Language Center',
+        url: '',
+        description: 'Private language school that provides personalized language instruction for adults, teens, and children'
+    },
+    {
+        name: 'Katy ISD Parent ESL Classes',
+        url: '',
+        description: 'Provides free adult English classes along with mentoring and workshops'
+    },
+    {
+        name: 'Fort Bend Library',
+        url: '',
+        description: 'Periodically hosts ESL conversation circles, informal free English practice events where learners can improve their speaking skills'
+    },
+    {
+        name: 'Trinity Baptist Church',
+        url: '',
+        description: 'Offers free ESL classes for adults, beginner through advanced'
+    },
+    {
+        name: 'Christ Church',
+        url: '',
+        description: 'Offers ESL classes with multiple proficiency levels'
+    },
+    {
+        name: 'St. Bartholomew Catholic Church',
+        url: 'Offers morning and evening ESL classes'
+    }
+];
 
 // Populate page with tutoring help
 document.querySelector(`section.education`).innerHTML += `<h2 class="subcategory">Tutoring Help</h2>`;

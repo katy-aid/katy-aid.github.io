@@ -7,6 +7,7 @@
 
 ## All Old Resources
 - Add subcategory headings
+- Update descriptions on map
 
 ## All Resources
 - Restructure images and ids for resources within subcategories
