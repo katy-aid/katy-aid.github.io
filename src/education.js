@@ -183,3 +183,31 @@ for (let i = 0; i < esl.length; i++) {
     // Adjust height of resource site image based on overall size of name and description
     document.querySelector(`#site-img${i + tutoring.length}`).style.setProperty('height', `calc(100% - 20px - ${window.getComputedStyle(text).height})`);
 }
+
+// Populate page with adult education resources
+document.querySelector(`section.education`).innerHTML += `<h2 class="subcategory">Adult Education</h2>`;
+for (let i = 0; i < adult.length; i++) {
+    let r = adult[i];
+    document.querySelector(`section.education`).innerHTML += `
+        <div class="resource">
+            <a href="${r.url}" target="_blank">
+                <div class="card">
+                    <div id="text${i + tutoring.length + esl.length}" class="text">
+                        <h3>${r.name}</h3>
+                        <p>${r.description}</p>
+                    </div>
+                    <div id="site-img${i + tutoring.length + esl.length}" class="site-img"></div>
+                </div>
+            </a>
+        </div>
+    `;
+
+    // Add image of resource site below its name and description
+    document.querySelector(`#site-img${i + tutoring.length + esl.length}`).style.setProperty('background', `url("assets/img/sites/education/${i + tutoring.length + esl.length}.png") no-repeat top center / cover`, 'important'); // background: imageURL repeat verticalPosition horizontalPosition / size
+
+    // Access div containing current name and description
+    let text = document.querySelector(`#text${i + tutoring.length + esl.length}`);
+
+    // Adjust height of resource site image based on overall size of name and description
+    document.querySelector(`#site-img${i + tutoring.length + esl.length}`).style.setProperty('height', `calc(100% - 20px - ${window.getComputedStyle(text).height})`);
+}
