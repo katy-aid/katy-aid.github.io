@@ -16,6 +16,66 @@ const tutoring = [
         name: 'KCM Homework Buddies',
         url: 'https://ktcm.org/event/homework-buddies/',
         description: 'Offers free tutoring for grades K-12 in the Katy area'
+    },
+    {
+        name: 'The Tutoring Center',
+        url: '',
+        description: 'Personalized tutoring and study skill support for students of all ages'
+    },
+    {
+        name: 'Solutions Education',
+        url: '',
+        description: 'Private tutoring and test preparation center that provides personalized academic support for students in elementary to high school'
+    },
+    {
+        name: "Counter's Tutoring Connection",
+        url: '',
+        description: 'Private tutoring center focused on personalized education for students preschool through college'
+    },
+    {
+        name: 'Katy Scholars',
+        url: '',
+        description: 'Educational services business, specializing in tutoring, test preparation, and academic support'
+    },
+    {
+        name: 'Benedictine Tutors',
+        url: '',
+        description: 'Tutoring and test preparation center, serving students grades K-12'
+    },
+    {
+        name: 'Best in Class Education Center',
+        url: '',
+        description: 'Supplemental learning center that provides personalized academic enrichment tutoring for kids in all grade levels'
+    },
+    {
+        name: 'Mathnasium',
+        url: '',
+        description: 'Math-focused learning center, offering individualized tutoring for students from preschool through college'
+    },
+    {
+        name: 'Kumon Math and Reading Center',
+        url: '',
+        description: 'Provides after-school tutoring in math and reading for children from preschool through high school'
+    },
+    {
+        name: 'C2 Education',
+        url: '',
+        description: 'Tutoring and college preparation center specializing in personalized academic tutoring, standardized testing preparation, and college admission counseling for students in grades K-12'
+    },
+    {
+        name: 'Tutoring Club of Katy',
+        url: '',
+        description: 'Supplemental education center providing individualized tutoring for students preschool through 12th grade'
+    },
+    {
+        name: 'Katy Test Prep and More',
+        url: '',
+        description: 'Education center focused on standardized test preparation and academic tutoring'
+    },
+    {
+        name: 'Huntington Learning Center',
+        url: '',
+        description: 'Learning center that offers tutoring and test preparation services'
     }
 ];
 
