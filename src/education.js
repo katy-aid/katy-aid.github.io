@@ -155,3 +155,31 @@ for (let i = 0; i < tutoring.length; i++) {
     // Adjust height of resource site image based on overall size of name and description
     document.querySelector(`#site-img${i}`).style.setProperty('height', `calc(100% - 20px - ${window.getComputedStyle(text).height})`);
 }
+
+// Populate page with ESL help
+document.querySelector(`section.education`).innerHTML += `<h2 class="subcategory">English as a Second Language (ESL)</h2>`;
+for (let i = 0; i < esl.length; i++) {
+    let r = esl[i];
+    document.querySelector(`section.education`).innerHTML += `
+        <div class="resource">
+            <a href="${r.url}" target="_blank">
+                <div class="card">
+                    <div id="text${i}" class="text">
+                        <h3>${r.name}</h3>
+                        <p>${r.description}</h3>
+                    </div>
+                    <div id="site-img${i}" class="site-img"></div>
+                </div>
+            </a>
+        </div>
+    `;
+
+    // Add image of resource site below its name and description
+    document.querySelector(`#site-img${i}`).style.setProperty('background', `url("assets/img/sites/education/${i}.png") no-repeat top center / cover`, 'important'); // background: imageURL repeat verticalPosition horizontalPosition / size
+
+    // Access div containing current name and description
+    let text = document.querySelector(`#text${i}`);
+
+    // Adjust height of resource site image based on overall size of name and description
+    document.querySelector(`#site-img${i}`).style.setProperty('height', `calc(100% - 20px - ${window.getComputedStyle(text).height})`);
+}

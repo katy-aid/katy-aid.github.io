@@ -22,3 +22,4 @@
 - Restructure home page
 - Turn current map into sitemap
 - Create map for subcategories (with places that have physical locations) to show accurate locations but with custom icons (maybe image of site)
+- Restructure databases to have one array containing all subcategories in category
