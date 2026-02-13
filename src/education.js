@@ -164,22 +164,22 @@ for (let i = 0; i < esl.length; i++) {
         <div class="resource">
             <a href="${r.url}" target="_blank">
                 <div class="card">
-                    <div id="text${i}" class="text">
+                    <div id="text${i + tutoring.length}" class="text">
                         <h3>${r.name}</h3>
                         <p>${r.description}</h3>
                     </div>
-                    <div id="site-img${i}" class="site-img"></div>
+                    <div id="site-img${i + tutoring.length}" class="site-img"></div>
                 </div>
             </a>
         </div>
     `;
 
     // Add image of resource site below its name and description
-    document.querySelector(`#site-img${i}`).style.setProperty('background', `url("assets/img/sites/education/${i}.png") no-repeat top center / cover`, 'important'); // background: imageURL repeat verticalPosition horizontalPosition / size
+    document.querySelector(`#site-img${i + tutoring.length}`).style.setProperty('background', `url("assets/img/sites/education/${i + tutoring.length}.png") no-repeat top center / cover`, 'important'); // background: imageURL repeat verticalPosition horizontalPosition / size
 
     // Access div containing current name and description
-    let text = document.querySelector(`#text${i}`);
+    let text = document.querySelector(`#text${i + tutoring.length}`);
 
     // Adjust height of resource site image based on overall size of name and description
-    document.querySelector(`#site-img${i}`).style.setProperty('height', `calc(100% - 20px - ${window.getComputedStyle(text).height})`);
+    document.querySelector(`#site-img${i + tutoring.length}`).style.setProperty('height', `calc(100% - 20px - ${window.getComputedStyle(text).height})`);
 }
