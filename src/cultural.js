@@ -143,37 +143,37 @@ const worship = [
 const other = [
     {
         name: 'Katy Asian Town',
-        url: '',
+        url: 'https://katyasiantown.com/en/5-2/',
         description: 'Shopping center with an Asian supermarket and eateries for dim sum, poke, noodles, hot pot, and more'
     },
     {
         name: 'Bonjour and Bienvenue French Hub',
-        url: '',
+        url: 'https://www.frenchhubhouston.com/',
         description: 'French language classes and cultural meetups'
     },
     {
         name: 'Crossing Borders Language Center',
-        url: '',
+        url: 'https://www.crossingborderslanguages.com/katy/',
         description: 'Language school that offers a variety of languages and teaches ESL classes'
     },
     {
         name: 'Spanish Schoolhouse',
-        url: '',
+        url: 'https://spanishschoolhouse.com/',
         description: 'Spanish preschool language immersion spot'
     },
     {
         name: 'Katy Korean School',
-        url: '',
+        url: 'https://www.katykorean.com/',
         description: 'Korean language and culture education center'
     },
     {
         name: 'Happy Mandarin',
-        url: '',
+        url: 'https://www.happymandarinkaty.com/',
         description: 'Mandarin language and immersion classes'
     },
     {
         name: 'Upasana Kalakendra',
-        url: '',
+        url: 'https://www.upasanakalakendra.com/',
         description: 'Cultural dance studio specializing in South Asian dance styles'
     }
 ];
