@@ -26,7 +26,7 @@ const markets = [
         name: 'Dolphin Mart',
         url: 'https://maps.app.goo.gl/WMe9L2LZ11AFfheo7',
         description: 'Asian grocery store with a variety of products, from prepackaged goods and snacks to fresh produce'
-    }
+    },
     {
         name: 'Tinda Filipino Store',
         url: 'https://www.facebook.com/tindafilipinostore/',
@@ -76,67 +76,67 @@ const markets = [
 const worship = [
     {
         name: 'The Fellowship',
-        url: '',
+        url: 'https://thefellowship.org/',
         description: 'A non-denominational church with multiple Sunday services and programs for kids and students'
     },
     {
         name: 'Cinco Ranch Church of Christ',
-        url: '',
+        url: 'https://www.cincochurch.com/',
         description: 'Offers Bible classes and worship with no dress code, emphasizing simple, New Testament Christianity'
     },
     {
         name: 'Grace Fellowship Church',
-        url: '',
+        url: 'https://www.whatisgrace.org/',
         description: 'A large church with a strong focus on youth ministries'
     },
     {
         name: 'Vien Thong Tu',
-        url: '',
+        url: 'https://www.vienthongtu.net/',
         description: 'Vietnamese Buddhist temple known for its beautiful architecture, peaceful atmosphere, and vibrant community; also offers a popular vegetarian restaurant on weekends, serving delicious vegan food and fostering spiritual growth through meditation and cultural event'
     },
     {
         name: 'Lien Hoa Temple',
-        url: '',
+        url: 'https://www.daotranglienhoa.com/',
         description: 'Vietnamese Buddhist centers that serve as spiritual hubs for meditation, cultural events, and charitable work, offering teachings in both Vietnamese and English, and fostering community with practices like mindfulness, compassionate living, and shared vegetarian meals'
     },
     {
         name: 'Texas Teo Chew Temple',
-        url: '',
+        url: 'https://www.teochewtemplehouston.com/',
         description: 'Vietnamese Buddhist temple known for its colorful traditional Chinese architecture, serene atmosphere, and guardian statues'
     },
     {
         name: 'Masjid Aqsa (Katy Islamic Center)',
-        url: '',
+        url: 'https://www.aqsamasjidkaty.com/',
         description: 'Central spot for daily prayers (Salat), Friday prayers, a Weekend Islamic School, and Quran classes'
     },
     {
         name: 'West Katy Islamic Center',
-        url: '',
+        url: 'https://wkic.org/',
         description: 'Offering daily prayers and community activities and organized for religious, chariable, and educational purposes to serve the Muslim community'
     },
     {
         name: 'Al-Huda Islamic Center',
-        url: '',
+        url: 'https://alhudakaty.org/',
         description: 'Focuses on religious guidance, education, youth development, and community services for Muslims and non-Muslims in the Katy area'
     },
     {
         name: 'Gayatri Temple',
-        url: '',
+        url: 'https://www.awgphouston.org/',
         description: 'First permanent Hindu temple in Katy that serves as a central hub for prayer, classes, and gatherings'
     },
     {
         name: 'Katy Hindu Community',
-        url: '',
+        url: 'https://katyhinducommunity.org/',
         description: 'An organization that hosts events like the annual Sri Sita Rama Kalyana Mahotsavam, often in collaboration with temples'
     },
     {
         name: 'Shivavishnu Mandir',
-        url: '',
+        url: 'https://sdsvmandir.org/',
         description: 'A Hindu temple serving the local community with daily pujas, major festival celebrations (like Diwali, Navaratri), and spiritual activities for youth and seniors'
     },
     {
         name: 'Temple Sinai',
-        url: '',
+        url: 'https://temple-sinai.shulcloud.com/',
         description: 'A reform synagogue located near Katy, known for being warm, friendly inclusive, and welcoming to interfaith families, with services and activities for all ages'
     }
 ];
