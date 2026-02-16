@@ -71,37 +71,37 @@ const local = [
 const help = [
     {
         name: 'Katy Area Economic Development Council',
-        url: '',
+        url: 'https://www.katyedc.org/',
         description: 'A nonprofit that fosters economic growth by attracting and expanding high-quality businesses, creating jobs and supporting local companies'
     },
     {
         name: 'Fort Bend Small Business Development Center',
-        url: '',
+        url: 'https://www.sbdc.uh.edu/sbdc/Fort_Bend_County_SBDC.asp',
         description: 'A nonprofit prodividng free, confidential business consulting and training for small businesses'
     },
     {
         name: "The Governor's Office of Small Business Assistance and the Business Permit Office",
-        url: '',
+        url: 'https://gov.texas.gov/business/page/small-business',
         description: 'Provides resources, guidance, and information to help entrepreneurs and small businesses start, operate, and grow'
     },
     {
         name: "Katy Area Chamber of Commerce",
-        url: '',
+        url: 'https://www.katychamber.com/',
         description: 'Business advocacy group, serving businesses by promoting economic growth, offering networking, and providing resources'
     },
     {
         name: 'BNI Cinco Ranch',
-        url: '',
+        url: 'https://www.bnicincoranch.com/',
         description: 'A local chapter of the global Business Network International (BNI) organization, focused on helping business professionals grow their bsuinesses'
     },
     {
         name: "Women's Council of Entrepreneurs (WCE) - Katy Chapter",
-        url: '',
+        url: 'https://www.wearewce.com/Katy-Texas',
         description: 'Connects local women business owners in a supportive, trust-building community through events and by offering resources and networking'
     },
     {
         name: 'POPUPSHOPS',
-        url: '',
+        url: 'https://www.popupshops.com/',
         description: 'An online marketplace connecting brands and retailers with landlords to find and book short-term, flexible retail spaces'
     }
 ];
