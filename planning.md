@@ -1,8 +1,8 @@
 # Planning
 
 ## All New Resources
-- Add urls to databases
-- Ensure no urls are Google Search links (https://www.google.com/search?)
+- ✅ Add urls to databases
+- ✅ Ensure no urls are Google Search links (https://www.google.com/search?)
 - Ensure all links work and match up with resource
 - Add site images to assets (following previously established naming convention)
 - Ensure all site images match up with resource
