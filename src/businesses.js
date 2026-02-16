@@ -108,17 +108,17 @@ const help = [
 const places = [
     {
         name: 'Smith Ranch',
-        url: '',
+        url: 'http://www.smithranchkaty.com/',
         description: 'Hosts large-scale community events and actively recruits food trucks, small businesses, and artisans'
     },
     {
         name: 'Thrive Creative Artisan Market',
-        url: '',
+        url: 'https://mythrivemkt.com/',
         description: 'A curated market seeking artisans and small businesses for specific dates'
     },
     {
         name: 'La Centerra',
-        url: '',
+        url: 'https://lacenterra.com/',
         description: 'A popular outdoor shopping center that hosts large seasonal markets and events, offering spots for local vendors, pop-ups, and small businesses'
     }
 ];
