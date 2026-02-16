@@ -14,42 +14,42 @@ const diseases = [
     },
     {
         name: 'Medical Office of Katy, Internal Medicine Practice',
-        url: '',
+        url: 'https://medicalofficeofkaty.com/',
         description: 'Medical office run by Internist Dr. Humera internal who specializing in primary care medicine and preventive and chronic health care'
     },
     {
         name: 'Hulu Health',
-        url: '',
+        url: 'https://www.hulu-health.com/',
         description: 'Medical clinic that provides primary care, physical therapy, and acupuncture to all ages'
     },
     {
         name: 'UT Physicians Multispecialty',
-        url: '',
+        url: 'https://www.utphysicians.com/clinic/ut-physicians-multispecialty-cinco-ranch/',
         description: 'Multispecialty clinic that offers primary and specialty care for children, adolescents, and adults'
     },
     {
         name: 'CLS Health Pain Management Associates',
-        url: '',
+        url: 'https://cls.health/locations/pain-management-cinco-ranch',
         description: 'Pain management specialists for chronic pain support'
     },
     {
         name: 'FYZICAL Therapy and Balance Center',
-        url: '',
+        url: 'https://www.fyzical.com/cinco-ranch-east/',
         description: 'Physical therapy and rehabilitation clinic that provides individualized treatment focused on restoring movement and improving balance'
     },
     {
         name: "Cinco Ranch Alzheimer's Special Care Center",
-        url: '',
+        url: 'https://sinceriseniorliving.com/cinco-ranch/',
         description: "Retirement community dedicated to providing memory care in a secure, supportive environment designed for individuals living with Alzheimer's and dementia"
     },
     {
         name: 'Airrosti',
-        url: '',
+        url: 'https://www.airrosti.com/location/texas/katy-24022-cinco-village-center-blvd-cinco',
         description: 'A healthcare group that employs and trains providers specialized in delivering high quality, outcome-based musculoskeletal care and pain  management'
     },
     {
         name: 'Encompass Health Rehabilitation Hospital',
-        url: '',
+        url: 'https://www.encompasshealth.com/locations/katy-rehab?utm_source=google&utm_medium=organic&utm_campaign=gbp',
         description: 'Specialized healthcare facility focused on inpatient rehabilitation care after strokes, traumatic injuries and other neurological conditions'
     }
 ];
@@ -66,32 +66,32 @@ const addiction = [
     },
     {
         name: 'Positive Recovery Centers - Katy',
-        url: '',
+        url: 'https://positiverecovery.com/locations/cinco-ranch/',
         description: 'Addiction treatment center, providing outpatient care, group counseling, family support, and aftercare program'
     },
     {
         name: 'New Dimensions Day Treatment Center',
-        url: '',
+        url: 'https://nddtreatment.com/',
         description: 'Offers structured day treatment and support services for recovery'
     },
     {
         name: 'Positive Recovery Center',
-        url: '',
+        url: 'https://positiverecovery.com/locations/cinco-ranch/?utm_source=google&utm_medium=organic&utm_campaign=gbpcr',
         description: 'Addiction treatment center that offers a wide variety of outpatient care'
     },
     {
         name: 'Drug Detox',
-        url: '',
+        url: 'https://www.norrisrecovery.com/locations/katy-texas',
         description: 'Local site focused on detox and initial recovery support'
     },
     {
         name: 'The Recovery Therapist',
-        url: '',
+        url: 'http://joanneketch.com/',
         description: 'Addiction support program run by a specialist in private and custom substance abuse psychotherapy services'
     },
     {
         name: 'Alcoholics Anonymous',
-        url: '',
+        url: 'https://addictiontreatmentmagazine.com/alcoholics-anonymous/tx/katy/',
         description: 'Global, peer-led mutual-aid fellowship focused on abstinence-based recovery from alcoholism through it spiritually inclined Twelve Steps that hosts many meetings in Katy'
     }
 ];
