@@ -185,7 +185,7 @@ for (let i = 0; i < markets.length; i++) {
     document.querySelector(`section.cultural`).innerHTML += `
         <div class="resource">
             <a href="${r.url}" target="_blank">
-                <div class="card">
+                <div class="fade-in card">
                     <div id="text${i}" class="text">
                         <h3>${r.name}</h3>
                         <p>${r.description}</h3>
@@ -213,7 +213,7 @@ for (let i = 0; i < worship.length; i++) {
     document.querySelector(`section.cultural`).innerHTML += `
         <div class="resource">
             <a href="${r.url}" target="_blank">
-                <div class="card">
+                <div class="fade-in card">
                     <div id="text${i + markets.length}" class="text">
                         <h3>${r.name}</h3>
                         <p>${r.description}</p>
@@ -241,7 +241,7 @@ for (let i = 0; i < other.length; i++) {
     document.querySelector(`section.cultural`).innerHTML += `
         <div class="resource">
             <a href="${r.url}" target="_blank">
-                <div class="card">
+                <div class="fade-in card">
                     <div id="text${i + markets.length + worship.length}" class="text">
                         <h3>${r.name}</h3>
                         <p>${r.description}</p>

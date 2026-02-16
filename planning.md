@@ -28,3 +28,4 @@
 - Restructure databases to have one array containing all subcategories in category
 - Add more categories, subcategories, and resources
 - Add animations (ex. fade-in)
+- Figure out how to ensure animation occurs even multiple elements already visible on screen (also for Kryptographer)
