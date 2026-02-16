@@ -194,7 +194,6 @@ const database = {
 
 // Populate page with all cultural resources
 let cat = database.category;
-let lens = 0;
 for (let s = 0; s < database.data.length; s++) { // Iterates through each subcategory object within database
     let subcat = database.data[s];
     document.querySelector(`section.${cat}`).innerHTML += `<h2 class="subcategory">${subcat.title}</h2>`;
@@ -215,10 +214,10 @@ for (let s = 0; s < database.data.length; s++) { // Iterates through each subcat
         `;
 
         // Add image of resource site below its name and description
-        document.querySelector(`#site-img-${s}-${i}`).style.setProperty('background', `url("assets/img/sites/${cat}//${subcat.title}/${i}.png") no-repeat top center / cover`, 'important'); // background: imageURL repeat verticalPosition horizontalPosition / size
+        document.querySelector(`#site-img-${s}-${i}`).style.setProperty('background', `url("assets/img/sites/${cat}/${subcat.title}/${i}.png") no-repeat top center / cover`, 'important'); // background: imageURL repeat verticalPosition horizontalPosition / size
 
         // Access div containing current name and description
-        let text = document.querySelector(`#text-${s}-${i}`);
+        // let text = document.querySelector(`#text-${s}-${i}`);
 
         // Adjust height of resource site image based on overall size of name and desccription
         // document.querySelector(`#site-img-${s}-${i}`).style.setProperty('height', `calc(100% - 20px - ${window.getComputedStyle(text).height})`);
