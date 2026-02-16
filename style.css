@@ -337,7 +337,9 @@ small img.inline, button.inline img {
 }
 
 .card div.site-img {
-    width: 100%;
+    width: 100%; /* parent width: calc(100% - 64px) */
+    aspect-ratio: 2920 / 1654; /* width / height */
+    object-fit: cover;
     border-radius: 0px 0px 12px 12px; /* top-left top-right bottom-right bottom-left */
 }
 
@@ -405,7 +407,6 @@ small img.inline, button.inline img {
 
 .resource {
     width: calc(100% - 64px);
-    height: 300px;
     background-color: white;
 }
 

@@ -221,6 +221,6 @@ for (let s = 0; s < database.data.length; s++) { // Iterates through each subcat
         let text = document.querySelector(`#text-${s}-${i}`);
 
         // Adjust height of resource site image based on overall size of name and desccription
-        document.querySelector(`#site-img-${s}-${i}`).style.setProperty('height', `calc(100% - 20px - ${window.getComputedStyle(text).height})`);
+        // document.querySelector(`#site-img-${s}-${i}`).style.setProperty('height', `calc(100% - 20px - ${window.getComputedStyle(text).height})`);
     }
 }
