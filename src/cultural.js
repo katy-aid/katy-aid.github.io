@@ -5,7 +5,7 @@ const database = {
     category: 'cultural',
     data: [
         {
-            subcategory: 'Ethnic Markets',
+            title: 'Ethnic Markets',
             resources: [
                 {
                     name: 'Arbat Market',
@@ -80,7 +80,7 @@ const database = {
             ]
         },
         {
-            subcategory: 'Worship Places',
+            title: 'Worship Places',
             resources: [
                 {
                     name: 'The Fellowship',
@@ -150,7 +150,7 @@ const database = {
             ]
         },
         {
-            subcategory: 'Other Places',
+            title: 'Other Places',
             resources: [
                 {
                     name: 'Katy Asian Town',
@@ -195,36 +195,32 @@ const database = {
 // Populate page with all cultural resources
 let cat = database.category;
 let lens = 0;
-for (let s = 0; s < database.data.length; s++) { // Iterates through each subcateogry object within database
+for (let s = 0; s < database.data.length; s++) { // Iterates through each subcategory object within database
     let subcat = database.data[s];
-    document.querySelector(`section.${cat}`).innerHTML += `<h2 class="subcategory">${subcat.subcategory}</h2>`;
-    for (let j = 0; j < s; j++) { // Iterates through each previous subcategory up until current subcategory at index 's'
-        lens += database.data[j].resources.length;
-    }
+    document.querySelector(`section.${cat}`).innerHTML += `<h2 class="subcategory">${subcat.title}</h2>`;
     for (let i = 0; i < subcat.resources.length; i++) { // Iterates through each resource within subcategory
         let r = subcat.resources[i];
-        let index = i + lens; // Used to create id that is unique to each resource on page
         document.querySelector(`section.${cat}`).innerHTML += `
             <div class="resource">
                 <a href="${r.url}" target="_blank">
                     <div class="card">
-                        <div id="text${index}" class="text">
+                        <div id="text-${s}-${i}" class="text">
                             <h3>${r.name}</h3>
                             <p>${r.description}</h3>
                         </div>
-                        <div id="site-img${index}" class="site-img"></div>
+                        <div id="site-img-${s}-${i}" class="site-img"></div>
                     </div>
                 </a>
             </div>
         `;
 
         // Add image of resource site below its name and description
-        document.querySelector(`#site-img${index}`).style.setProperty('background', `url("assets/img/sites/${cat}/${index}.png") no-repeat top center / cover`, 'important'); // background: imageURL repeat verticalPosition horizontalPosition / size
+        document.querySelector(`#site-img-${s}-${i}`).style.setProperty('background', `url("assets/img/sites/${cat}//${subcat.title}/${i}.png") no-repeat top center / cover`, 'important'); // background: imageURL repeat verticalPosition horizontalPosition / size
 
         // Access div containing current name and description
-        let text = document.querySelector(`#text${index}`);
+        let text = document.querySelector(`#text-${s}-${i}`);
 
         // Adjust height of resource site image based on overall size of name and desccription
-        document.querySelector(`#site-img${index}`).style.setProperty('height', `calc(100% - 20px - ${window.getComputedStyle(text).height})`);
+        document.querySelector(`#site-img-${s}-${i}`).style.setProperty('height', `calc(100% - 20px - ${window.getComputedStyle(text).height})`);
     }
 }

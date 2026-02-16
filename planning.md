@@ -22,10 +22,11 @@
 - Add buttons for subcategories at top of each resource page (when applicable)
 
 ## General
+- Restructure databases to have one array containing all subcategories in category (including OLD resources)
+- Create folders for each site images in each subcategory within each category
 - Restructure home page
 - Turn current map into sitemap
 - Create map for subcategories (with places that have physical locations) to show accurate locations but with custom icons (maybe image of site)
-- Restructure databases to have one array containing all subcategories in category
 - Add more categories, subcategories, and resources
 - Add animations (ex. fade-in) (after site images)
 - Figure out how to ensure animation occurs even multiple elements already visible on screen (also for Kryptographer)
