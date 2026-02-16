@@ -2,7 +2,9 @@
 
 ## All New Resources
 - Add urls to databases
+- Ensure all links work and match up with resource
 - Add site images to assets (following previously established naming convention)
+- Ensure all site images match up with resource
 - Add each category to map
 
 ## All Old Resources

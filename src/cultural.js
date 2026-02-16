@@ -4,67 +4,72 @@
 const markets = [
     {
         name: 'Arbat Market',
-        url: '',
+        url: 'https://maps.app.goo.gl/pAewEADKSSuAAMh87',
         description: 'Eastern and Russian grocery store that specializes in imported goods such as cheeses, meats, bread, and unique produce and offers a wide variety of products from fresh produce to frozen meals and snacks'
     },
     {
         name: 'The Best Stop Cajun Market',
-        url: '',
+        url: 'https://www.beststopinscott.com/contact/katy-tx/',
         description: 'Grocery store that specializes in cajun meats and cuisine, such as bondin, crackling, and crawfish pie'
     },
     {
         name: 'H-Mart',
-        url: '',
+        url: 'https://www.hmart.com/',
         description: 'Largest Asian supermarket chain that specializes in Korean, Japanese, Chinese, and other Asian groceries, produce, seafood, snacks, household items, and skincare'
     },
     {
         name: 'Fiesta Mart',
-        url: '',
+        url: 'https://www.fiestamart.com/',
         description: 'Latin American supermarket chain with a diverse selection of produce, bakery goods, meats, seafood, etc'
     },
     {
+        name: 'Dolphin Mart',
+        url: 'https://maps.app.goo.gl/WMe9L2LZ11AFfheo7',
+        description: 'Asian grocery store with a variety of products, from prepackaged goods and snacks to fresh produce'
+    }
+    {
         name: 'Tinda Filipino Store',
-        url: '',
+        url: 'https://www.facebook.com/tindafilipinostore/',
         description: 'Filipino grocery store with specialty food'
     },
     {
         name: 'Triveni Supermarket',
-        url: '',
+        url: 'https://trivenisupermarket.com/',
         description: 'South Asian grocery store known for offering authentic Indian spieces, fresh produce, specialty items, halal meats, a bakery, and a food court with Indian meals'
     },
     {
         name: 'Indian Bazaar and Cafe',
-        url: '',
+        url: 'https://maps.app.goo.gl/6odUi85Ntfp9wUWn6',
         description: 'Casual, welcoming cafe and grocery store for Indian staples including spices, lentils, and snacks'
     },
     {
         name: 'Keemat Grocers',
-        url: '',
+        url: 'https://www.keematgrocers.com/',
         description: 'Indian groceries and spices market also stocking fresh produce, dried foods and snacks'
     },
     {
         name: 'Vishala Grocery',
-        url: '',
+        url: 'https://www.vishalagrocerytx.com/',
         description: 'Offers snacks, dairy, and frozen goods stocked at a store with an eatery specializing in Indian groceries'
     },
     {
         name: 'Triumphant Food Store',
-        url: '',
+        url: 'https://maps.app.goo.gl/387ntS97rvfyrhHM7',
         description: 'Supermarket specializing in traditional meals and products from Africa'
     },
     {
         name: 'Tawakkul Grocers and Halal Meat',
-        url: '',
+        url: 'https://maps.app.goo.gl/yviAP8Aa2RT7asp26',
         description: 'South Asian/Desi grocery store and butcher shop known for its excellent quality fresh, halal meat (chicken, goat, steak), diverse Asian groceries, and delicious homemade prepared foods like samosas and biryani'
     },
     {
         name: 'Daiso',
-        url: '',
+        url: 'https://daisous.com/?srsltid=AfmBOorG1kqc6l9QyuDBXmPvW1V00ikvvg40n22IQ_007wo3bFgo6D3K',
         description: 'Japanese retail chain known for its vast selection of unique and affordable household goods, stationary, beauty products, snacks, and quirky lifestyle items'
     },
     {
         name: '99 Ranch',
-        url: '',
+        url: 'https://www.99ranch.com/',
         description: 'Supermarket chain known for a vast selection of East and Southeast Asian groceries, fresh produce, live seafood, meats, bakery items, prepared foods, and specialty products'
     }
 ];
