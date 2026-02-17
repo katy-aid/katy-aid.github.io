@@ -1,4 +1,4 @@
-/*** VOLUNTEER OPPORTUNITIES ***/
+/*** VOLUNTEER ***/
 
 // Database for all volunteer opportunities
 const database = {
