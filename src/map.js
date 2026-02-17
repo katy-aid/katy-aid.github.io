@@ -13,8 +13,56 @@ map.fitBounds(bounds);
 
 // Information for each map marker
 const markers = {
+    businesses: {
+        location: [700, 300],
+        icon: L.icon({
+            iconUrl: 'assets/img/businesses.png',
+            iconAnchor: [100, 100],
+            popupAnchor: [0, -100]
+        }),
+        title: 'Small Businesses',
+        hook: 'Like local vendors?',
+        description: 'Find local small businesses and learn how to start your own',
+        market: null
+    },
+    cultural: {
+        location: [700, 500],
+        icon: L.icon({
+            iconUrl: 'assets/img/cultural.png',
+            iconAnchor: [100, 100],
+            popupAnchor: [0, -100]
+        }),
+        title: 'Cultural',
+        hook: 'Looking for culture?',
+        description: 'Explore ethnic markets, worship places, and more',
+        marker: null
+    },
+    education: {
+        location: [700, 700],
+        icon: L.icon({
+            iconUrl: 'assets/img/education.png',
+            iconAnchor: [100, 100],
+            popupAnchor: [0, -100]
+        }),
+        title: 'Education',
+        hook: 'Want to learn?',
+        description: 'Find educational resources for both students and adults',
+        marker: null
+    },
+    info: {
+        location: [500, 500],
+        icon: L.icon({
+            iconUrl: 'assets/img/info.png',
+            iconAnchor: [100, 100],
+            popupAnchor: [0, -50]
+        }),
+        title: 'Katy Aid',
+        hook: 'Welcome to Katy!',
+        description: 'Learn more about the resources in Katy by moving around the map',
+        marker: null
+    },
     immigration: {
-        location: [750, 500],
+        location: [300, 300],
         icon: L.icon({
             iconUrl: 'assets/img/immigration.png',
             iconAnchor: [100, 100],
@@ -25,32 +73,8 @@ const markers = {
         description: 'Find resources to help you settle into the community',
         marker: null
     },
-    education: {
-        location: [500, 250],
-        icon: L.icon({
-            iconUrl: 'assets/img/education.png',
-            iconAnchor: [100, 100],
-            popupAnchor: [0, -100]
-        }),
-        title: 'Education',
-        hook: 'Are you a student?',
-        description: 'Find resources for helping you with your schoolwork',
-        marker: null    
-    },
-    info: {
-        location: [500, 500],
-        icon: L.icon({
-            iconUrl: 'assets/img/info.png',
-            iconAnchor: [100, 100],
-            popupAnchor: [0, -100]
-        }),
-        title: 'Katy Aid',
-        hook: 'Welcome to Katy!',
-        description: 'Learn more about the resources in Katy by moving around the map',
-        marker: null
-    },
     medical: {
-        location: [500, 750],
+        location: [300, 500],
         icon: L.icon({
             iconUrl: 'assets/img/medical.png',
             iconAnchor: [100, 100],
@@ -60,6 +84,17 @@ const markers = {
         hook: 'Looking for medical assistance?',
         description: 'Find resources for chronic disease support and addiction recovery',
         marker: null
+    },
+    volunteer: {
+        location: [300, 700],
+        icon: L.icon({
+            iconUrl: 'assets/img/volunteer.png',
+            iconAnchor: [100, 100],
+            popupAnchor: [0, -100]
+        }),
+        title: 'Volunteer',
+        hook: 'Want to help others?',
+        description: 'Explore a variety of places where you can volunteer'
     }
 };
 
@@ -84,15 +119,12 @@ Object.keys(markers).forEach(mName => {
                 <p class="center">${m.description}</p>
                 <a href="references.html"><button>View References</button></a>
             </div>
-        `, {
-            autoClose: false,
-            closeOnClick: false
-        });
+        `);
     }
 });
 
 markers.info.marker.on('click', function(e) {
     markers.info.marker.openPopup();
 });
-map.setView([575, 500], 1);
+map.setView([575, 500], 0.5);
 markers.info.marker.fire('click');

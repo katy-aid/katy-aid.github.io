@@ -9,8 +9,8 @@
 - ✅ Ensure no urls are Google Search links (https://www.google.com/search?)
 
 ## All Old Resources
-- Add subcategory headings
 - Update descriptions on map
+- ✅ Add subcategory headings
 
 ## All Resources
 - Restructure images and ids for resources within subcategories
@@ -22,6 +22,7 @@
 - ✅ Make height of image consistent (not dependent on height of description)
 
 ## General
+- Improve map markers
 - Create folders for each site images in each subcategory within each category
 - Restructure home page
 - Turn current map into sitemap
@@ -29,4 +30,6 @@
 - Add more categories, subcategories, and resources
 - Add animations (ex. fade-in) (after site images)
 - Figure out how to ensure animation occurs even multiple elements already visible on screen (also for Kryptographer)
+- Add all icons and resources to references
+- Make time in header show local Katy time
 - ✅ Restructure databases to have one array containing all subcategories in category (including OLD resources)
