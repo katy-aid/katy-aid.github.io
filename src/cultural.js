@@ -113,11 +113,6 @@ const database = {
                     description: 'Vietnamese Buddhist temple known for its colorful traditional Chinese architecture, serene atmosphere, and guardian statues'
                 },
                 {
-                    name: 'Masjid Aqsa (Katy Islamic Center)',
-                    url: 'https://www.aqsamasjidkaty.com/',
-                    description: 'Central spot for daily prayers (Salat), Friday prayers, a Weekend Islamic School, and Quran classes'
-                },
-                {
                     name: 'West Katy Islamic Center',
                     url: 'https://wkic.org/',
                     description: 'Offering daily prayers and community activities and organized for religious, chariable, and educational purposes to serve the Muslim community'
@@ -171,11 +166,6 @@ const database = {
                     name: 'Spanish Schoolhouse',
                     url: 'https://spanishschoolhouse.com/',
                     description: 'Spanish preschool language immersion spot'
-                },
-                {
-                    name: 'Katy Korean School',
-                    url: 'https://www.katykorean.com/',
-                    description: 'Korean language and culture education center'
                 },
                 {
                     name: 'Happy Mandarin',
