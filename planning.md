@@ -31,5 +31,5 @@
 - Add animations (ex. fade-in) (after site images)
 - Figure out how to ensure animation occurs even multiple elements already visible on screen (also for Kryptographer)
 - Add all icons and resources to references
-- Make time in header show local Katy time
+- Make time in header shows local Katy time
 - ✅ Restructure databases to have one array containing all subcategories in category (including OLD resources)
