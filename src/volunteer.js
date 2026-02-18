@@ -33,11 +33,6 @@ const database = {
                     description: 'Nonprofit that offers high quality healthcare and health-related services to those who are uninsured or underinsured'
                 },
                 {
-                    name: 'Memorial Hermann Katy Hospital',
-                    url: 'https://memorialhermann.org/locations/katy',
-                    description: 'Provides clinical expertise, patient-centered care, and leading-edge technology'
-                },
-                {
                     name: "Cinco Ranch Alzheimer's Special Care Center",
                     url: 'https://sinceriseniorliving.com/cinco-ranch/',
                     description: "Retirement community dedicated to providing memory care in a secure, supportive environment designed for individuals living with Alzheimer's and dementia"
@@ -56,11 +51,6 @@ const database = {
                     name: 'Katy Heritage Society',
                     url: 'https://www.katyheritagesociety.com/',
                     description: 'Nonprofit dedicated to furthering the educational and cultural development of the community by preserving, restoring, and displaying historical landmarks, natural beauty, documents'
-                },
-                {
-                    name: "Upbring Krause Children's Center",
-                    url: 'https://maps.app.goo.gl/rfAE6ggdXiGeiDb5A',
-                    description: 'Offers a nurturing and temporary haven for hundreds of unaccommpanied children annually, providing them with solace, safety, and a pathway to healing after their journey across the Souther border'
                 }
             ]
         }

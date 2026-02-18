@@ -1,11 +1,11 @@
 # Planning
 
 ## All New Resources
+- Add more categories and resources
 - Ensure all links work and match up with resource
 - Add site images to assets (following previously established naming convention)
-- Ensure all site images match up with resource
-- Add each category to map
-- ✅ Add urls to databases
+- Add each category to map (short hook and description)
+- Add urls to databases
 - ✅ Ensure no urls are Google Search links (https://www.google.com/search?)
 
 ## All Old Resources
