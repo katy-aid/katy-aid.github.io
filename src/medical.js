@@ -8,11 +8,6 @@ const database = {
             title: 'Chronic and Degenerative Disease Support',
             resources: [
                 {
-                    name: 'Macie Center',
-                    url: 'https://www.maciemedical.com/chronic-care-management-katy/',
-                    description: 'Aids in chronic illness management and treatment'
-                },
-                {
                     name: 'Resilience Center of Houston',
                     url: 'https://www.resiliencecenterhouston.com/',
                     description: 'Provides therapy treatment for those dealing with life altering chronic illnesses'
@@ -73,7 +68,7 @@ const database = {
                     description: 'Aids those struggling with addiction, providing medical care, therapy, and resources for recovery'
                 },
                 {
-                    name: 'Positive Recovery Centers - Katy',
+                    name: 'Positive Recovery Center',
                     url: 'https://positiverecovery.com/locations/cinco-ranch/',
                     description: 'Addiction treatment center, providing outpatient care, group counseling, family support, and aftercare program'
                 },
@@ -83,12 +78,7 @@ const database = {
                     description: 'Offers structured day treatment and support services for recovery'
                 },
                 {
-                    name: 'Positive Recovery Center',
-                    url: 'https://positiverecovery.com/locations/cinco-ranch/?utm_source=google&utm_medium=organic&utm_campaign=gbpcr',
-                    description: 'Addiction treatment center that offers a wide variety of outpatient care'
-                },
-                {
-                    name: 'Drug Detox',
+                    name: 'Norris Recovery',
                     url: 'https://www.norrisrecovery.com/locations/katy-texas',
                     description: 'Local site focused on detox and initial recovery support'
                 },
