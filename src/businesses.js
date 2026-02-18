@@ -66,11 +66,6 @@ const database = {
                     name: "What's Poppin Popcorn",
                     url: 'https://whatspoppinpopcorn.co/',
                     description: 'Small, local popcorn store selling a large selection of popcorn in sweet, savory, and creative flavors'
-                },
-                {
-                    name: 'The Refinery Market',
-                    url: 'https://www.therefinerykaty.com/',
-                    description: 'A family-friendly community market, featuring local vendors, food trucks, live music, and family activities like face painting'
                 }
             ]
         },
@@ -108,7 +103,7 @@ const database = {
                     description: 'Connects local women business owners in a supportive, trust-building community through events and by offering resources and networking'
                 },
                 {
-                    name: 'POPUPSHOPS',
+                    name: 'POP UP SHOPS',
                     url: 'https://www.popupshops.com/',
                     description: 'An online marketplace connecting brands and retailers with landlords to find and book short-term, flexible retail spaces'
                 }
