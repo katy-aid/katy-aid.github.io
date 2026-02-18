@@ -33,16 +33,6 @@ const database = {
                     description: 'Private tutoring and test preparation center that provides personalized academic support for students in elementary to high school'
                 },
                 {
-                    name: "Counter's Tutoring Connection",
-                    url: 'https://counterstutoring.com/',
-                    description: 'Private tutoring center focused on personalized education for students preschool through college'
-                },
-                {
-                    name: 'Katy Scholars',
-                    url: 'https://maps.app.goo.gl/yeGkPcaQnALB72qe7',
-                    description: 'Educational services business, specializing in tutoring, test preparation, and academic support'
-                },
-                {
                     name: 'Benedictine Tutors',
                     url: 'https://benedictinetutors.com/',
                     description: 'Tutoring and test preparation center, serving students grades K-12'
@@ -85,22 +75,12 @@ const database = {
             ]
         },
         {
-            title: 'English as a Second Language (ESL)',
+            title: 'English as a Second Language',
             resources: [
-                {
-                    name: '123AmericanEnglish',
-                    url: 'http://www.123americanenglish.com/',
-                    description: 'Private language academy that specializes in teaching English as a second language to speakers of other languages by offering flexible course options'
-                },
                 {
                     name: 'Crossing Borders Language Center',
                     url: 'https://cblckaty.com/',
                     description: 'Private language school that provides personalized language instruction for adults, teens, and children'
-                },
-                {
-                    name: 'Katy ISD Parent ESL Classes',
-                    url: 'https://maps.app.goo.gl/iuPCRcnt8rwcnTyd7',
-                    description: 'Provides free adult English classes along with mentoring and workshops'
                 },
                 {
                     name: 'Fort Bend Library',
