@@ -20,6 +20,26 @@ const database = {
                     description: "An accessible waterpark for the whole family to enjoy a hot summer's day in the best way possible, with an inexpensive ticket and time spent with loved ones"
                 }
             ]
+        },
+        {
+            title: 'Shopping Centers',
+            resources: [
+                {
+                    name: 'Katy Mills Mall',
+                    url: 'https://www.simon.com/mall/katy-mills',
+                    description: 'A conveniently located shopping center, perfect for day to day essentials while also providing a fun outing as a family'
+                },
+                {
+                    name: 'La Centerra',
+                    url: 'https://lacenterra.com/',
+                    description: 'A beautiful outdoor shopping center and the ideal place to do upscale shopping dining, and entertainment within the Katy area'
+                },
+                {
+                    name: 'Katy Asia Town',
+                    url: 'https://katyasiantown.com/en/5-2/',
+                    description: 'A vibrant, culture-rich shopping center in the Katy Area'
+                }
+            ]
         }
     ]
 };
