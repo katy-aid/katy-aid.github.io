@@ -313,9 +313,13 @@ p.btn {
     text-align: center;
 }
 
-section.cat-btns {
+section.cat-btns > * {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+}
+
+section.cat-btns > * {
+    display: inline;
 }
 
 section.references {
