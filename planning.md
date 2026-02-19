@@ -1,7 +1,7 @@
 # Planning
 
 ## All New Resources
-- Add more categories and resources
+- Add more categories and resources (name, url, description, icons in alphabetical order)
 - Ensure all links work and match up with resource
 - Add site images to assets (following previously established naming convention)
 - Add each category to map (short hook and description)
