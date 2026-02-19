@@ -52,7 +52,7 @@ let cat = database.category;
 for (let s = 0; s < database.data.length; s++) { // Iterates through each subcategory object within database
     let subcat = database.data[s];
     document.querySelector(`section.${cat}`).innerHTML += `<h2 class="subcategory">${subcat.title}</h2>`;
-    for (let i = 0; i < subcat.resources.lenggth; i++) { // Iterates through each resource within subcategory
+    for (let i = 0; i < subcat.resources.length; i++) { // Iterates through each resource within subcategory
         let r = subcat.resources[i];
         document.querySelector(`section.${cat}`).innerHTML += `
             <div class="resource">
