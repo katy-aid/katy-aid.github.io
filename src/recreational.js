@@ -11,8 +11,13 @@ const database = {
                 },
                 {
                     name: 'Willow Fork Park',
-                    url: '',
-                    description: ''
+                    url: 'https://www.willowforkdrainagedistrict.com/parks-trails/willow-fork-park/',
+                    description: 'Offers a vast area of exploration with a butterfly garden, ultimate frisbee courses, and an expansive walkway that provides the perfect opportunity for a day spent outside'
+                },
+                {
+                    name: 'Typhoon Texas',
+                    url: 'https://typhoontexas.com/houston/',
+                    description: "An accessible waterpark for the whole family to enjoy a hot summer's day in the best way possible, with an inexpensive ticket and time spent with loved ones"
                 }
             ]
         }
