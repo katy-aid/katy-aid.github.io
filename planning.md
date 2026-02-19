@@ -17,7 +17,7 @@
     - Create image folders for each subcategory within its category folder
     - Start id counts from 0 for each subcategory
     - Ensure images match up with sites
-- Add button for subcategories at top of each resource page (when applicable, or maybe automtated?)
+- Add button for subcategories at top of each resource page (when applicable, or maybe automated?)
 - ✅ Fix vertical margin of resource cards when description is longer than 2 lines
 - ✅ Make height of image consistent (not dependent on height of description)
 
