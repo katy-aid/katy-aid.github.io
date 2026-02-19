@@ -1,7 +1,7 @@
 # Planning
 
 ## All New Resources
-- Add more categories and resources (name, url, description, icons in alphabetical order)
+- Add more categories and resources (name, url, description, ICONS in alphabetical order)
 - Ensure all links work and match up with resource
 - Add site images to assets (following previously established naming convention)
 - Add each category to map (short hook and description)
@@ -33,4 +33,5 @@
 - Add all icons and resources to references
 - Make time in header shows local Katy time
 - Ensure all images are in references
+- Ensure all resources are in references
 - ✅ Restructure databases to have one array containing all subcategories in category (including OLD resources)

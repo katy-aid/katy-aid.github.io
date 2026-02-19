@@ -117,9 +117,8 @@ Object.keys(markers).forEach(mName => {
                 <h3>${m.title}</h3>
                 <i>${m.hook}</i>
                 <p class="center">${m.description}</p>
-                <a href="references.html"><button>View References</button></a>
             </div>
-        `);
+        `); // <a href="references.html"><button>View References</button></a>
     }
 });
 

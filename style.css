@@ -3,8 +3,10 @@
 :root {
     --blue: #75d8ff;
     --blueTransp: #75d8ff75;
+    --darkGreen: #41bf6b;
     --green: #91DFAB;
     --greenTransp: #91DFAB75;
+    --red: #F0553F;
 }
 
 /*** FONTS ***/
@@ -47,13 +49,7 @@ a {
 
 body {
     line-height: 1.75;
-    background-color: var(--green);
-}
-
-body div.white {
-    background-color: rgba(255, 255, 255, 0.5);
-    height: 100%;
-    width: 100%;
+    background-color: var(--greenTransp);
 }
 
 button {
@@ -225,6 +221,11 @@ body.doc {
     background-color: white;
 }
 
+body.references p {
+    overflow-wrap: break-word;
+    width: 100%;
+}
+
 button.inline {
     box-shadow: none;
     cursor: default;
@@ -271,7 +272,8 @@ div.li img.inline.line-start {
 }
 
 h2.subcategory {
-    background-color: var(--blue);
+    background-color: var(--red);
+    color: white;
 }
 
 iframe.doc {
@@ -313,13 +315,28 @@ p.btn {
     text-align: center;
 }
 
-section.cat-btns > * {
+section.cat-btns {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0px 20px; /* row column*/
 }
 
 section.cat-btns > * {
     display: inline;
+}
+
+section.equal-btns {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section.equal-btns button {
+    display: block;
+    width: 200px;
+    margin: 10px auto;
 }
 
 section.references {
@@ -394,7 +411,7 @@ small img.inline, button.inline img {
 }
 
 .leaflet-container {
-    background-color: var(--green) !important;
+    background-color: var(--darkGreen) !important;
 }
 
 .leaflet-marker-icon {
