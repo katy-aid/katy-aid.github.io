@@ -313,6 +313,15 @@ p.btn {
     text-align: center;
 }
 
+section.cat-btns > * {
+    display: flex;
+    flex-direction: row;
+}
+
+section.cat-btns > * {
+    display: inline;
+}
+
 section.references {
     text-indent: -36px;
     padding-left: 36px;
