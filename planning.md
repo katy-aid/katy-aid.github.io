@@ -9,7 +9,7 @@
 - ✅ Ensure no urls are Google Search links (https://www.google.com/search?)
 
 ## All Old Resources
-- Update descriptions on map
+- ✅ Update descriptions on map
 - ✅ Add subcategory headings
 
 ## All Resources

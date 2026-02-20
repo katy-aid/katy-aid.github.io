@@ -105,7 +105,7 @@ const markers = {
         }),
         title: 'Residences',
         hook: 'Looking for a place to live?',
-        description: 'Check out some of the apartment complexes in the area'
+        description: 'Check out some of the apartment complexes and neighborhoods in the area'
     },
     volunteer: {
         location: [300, 700],
