@@ -45,7 +45,7 @@ const database = {
                 {
                     name: 'Airrosti',
                     url: 'https://www.airrosti.com/location/texas/katy-24022-cinco-village-center-blvd-cinco',
-                    description: 'A healthcare group that employs and trains providers specialized in delivering high quality, outcome-based musculoskeletal care and pain  management'
+                    description: 'A healthcare group that employs and trains providers specialized in delivering high quality, outcome-based musculoskeletal care and pain management'
                 },
                 {
                     name: 'Encompass Health Rehabilitation Hospital',
