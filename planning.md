@@ -24,6 +24,7 @@
 - ✅ Make height of image consistent (not dependent on height of description)
 
 ## General
+- Make time in header show local Katy time
 - Fix spacing of category buttons
 - Restructure home page
 - Turn current map into sitemap
@@ -32,7 +33,6 @@
 - Add animations (ex. fade-in) (after site images)
 - Figure out how to ensure animation occurs even multiple elements already visible on screen (also for Kryptographer)
 - Add all icons and resources to references
-- Make time in header shows local Katy time
 - Animate scrolling down to subcategory section
 - ✅ Change info icon
 - ✅ Create folders for site images in each subcategory within each category

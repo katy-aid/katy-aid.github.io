@@ -419,6 +419,43 @@ const database = {
                 }
             ]
         }
+    ],
+    immigration: [
+        {
+            title: 'Resources',
+            resources: [
+                {
+                    name: 'St. Frances Cabrini Center For Legal Assistance',
+                    url: 'https://catholiccharities.org/cabrini/',
+                    description: 'Provides free and low-cost legal assistance for immigrants and refugees, inclduing help with citizenship applications'
+                },
+                {
+                    name: 'U.S. Committee for Refugees and Immigrants',
+                    url: 'https://refugees.org',
+                    description: 'National non-profit helping refugees, asylum seekers, and trafficking survivors'
+                },
+                {
+                    name: 'CWS Houston',
+                    url: 'https://cwshouston.org',
+                    description: 'Houston-based aid that provides legal assistance and mental health services for immigrants, refugees and unaccompanied children'
+                },
+                {
+                    name: 'Justice For All Immigrants',
+                    url: 'https://www.justiceforallimmigrants.org',
+                    description: 'Provides affordable and proper immigration legal services as well as advocacy for low income families'
+                },
+                {
+                    name: 'YMCA International Services',
+                    url: 'https://ymcahouston.org/locations/ymca-international-services',
+                    description: 'General community outpost for aid and guidance for immigrants'
+                },
+                {
+                    name: "Immigrants' Rights Hotline",
+                    url: 'https://www.aclutx.org/en/campaigns/hotline',
+                    description: 'Hotline service providing information surrounding immigration laws and providing reminders about rights and civil liberties'
+                }
+            ]
+        }
     ]
 };
 
