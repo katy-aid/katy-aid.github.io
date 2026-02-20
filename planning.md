@@ -1,29 +1,8 @@
 # Planning
 
-## All New Resources
-- ✅ Add more categories and resources (name, url, description, ICONS in alphabetical order)
-- ✅ Ensure all links work and match up with resource
-- ✅ Add site images to assets (following previously established naming convention)
-- ✅ Add each category to map (short hook and description)
-- ✅ Add urls to databases
-- ✅ Ensure no urls are Google Search links (https://www.google.com/search?)
-
-## All Old Resources
-- ✅ Update descriptions on map
-- ✅ Add subcategory headings
-
-## All Resources
-- Try to optimize databases and populating logic? (WIP)
-- Maybe try using a JSON file for database content?
-- ✅ Finish adding buttons for subcategories at top of each resource page (when applicable, or maybe automated?)
-- ✅ Restructure images and ids for resources within subcategories
-    - ✅ Create image folders for each subcategory within its category folder
-    - ✅ Start id counts from 0 for each subcategory
-    - ✅ Ensure images match up with sites
-- ✅ Fix vertical margin of resource cards when description is longer than 2 lines
-- ✅ Make height of image consistent (not dependent on height of description)
-
 ## General
+- (WIP) Try to optimize databases and populating logic?
+- (almost WIP) Maybe try using a JSON file for database content?
 - Fix spacing of category buttons
 - Restructure home page
 - Turn current map into sitemap
