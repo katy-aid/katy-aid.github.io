@@ -1,8 +1,6 @@
 # Planning
 
 ## General
-- (WIP) Try to optimize databases and populating logic?
-- (almost WIP) Maybe try using a JSON file for database content?
 - Fix spacing of category buttons
 - Restructure home page
 - Turn current map into sitemap
@@ -12,6 +10,8 @@
 - Figure out how to ensure animation occurs even multiple elements already visible on screen (also for Kryptographer)
 - Add all icons and resources to references
 - Animate scrolling down to subcategory section
+- Maybe try using a JSON file for database content?
+- ✅ Optimize databases and populating logic
 - ✅ Make date and time in header shorter
 - ✅ Make date and time in header show local Katy date and time
 - ✅ Change info icon

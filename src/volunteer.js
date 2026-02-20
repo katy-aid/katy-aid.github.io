@@ -45,7 +45,7 @@ const database = {
                 {
                     name: 'Keep Encouraging Youth toward Success (KEYS) Mentoring',
                     url: 'https://www.katyisd.org/partners-in-education/programs/keys-mentoring',
-                    description: 'Katy ISD program that primarily focusees on relationship building, rather than tutoring between a mentor and student'
+                    description: 'Katy ISD program that primarily focuses on relationship building, rather than tutoring between a mentor and student'
                 },
                 {
                     name: 'Katy Heritage Society',
