@@ -319,11 +319,15 @@ section.cat-btns {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 0px 20px; /* row column*/
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    column-gap: 20px;
 }
 
-section.cat-btns > * {
-    display: inline;
+section.cat-btns a {
+    display: inline-block;
+    width: fit-content; /* or maybe max-content? */
 }
 
 section.equal-btns {

@@ -30,7 +30,7 @@ A collection of resources available in the community of Katy.
 
 - [Clock icon](https://thenounproject.com/icon/clock-1495285/)
 - [Map icon](https://www.flaticon.com/free-icon/map_235861)
-- [Info icon](https://openclipart.org/detail/307315/info-icon-rounded)
+- [Info icon](https://www.iconexperience.com/g_collection/icons/?icon=information)
 - [Business icon](https://www.iconexperience.com/g_collection/icons/?icon=market_stand)
 - [Cultural icon](https://www.flaticon.com/free-icon/chinese-house_1515182)
 - [Education icon](https://icons8.com/icon/40734/school-building)

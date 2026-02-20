@@ -23,6 +23,7 @@
 - ✅ Make height of image consistent (not dependent on height of description)
 
 ## General
+- Fix spacing of category buttons
 - Restructure home page
 - Turn current map into sitemap
 - Create map for subcategories (with places that have physical locations) to show accurate locations but with custom icons (maybe image of site)
@@ -32,6 +33,7 @@
 - Add all icons and resources to references
 - Make time in header shows local Katy time
 - Animate scrolling down to subcategory section
+- ✅ Change info icon
 - ✅ Create folders for site images in each subcategory within each category
 - ✅ Improve map markers
 - ✅ Restructure databases to have one array containing all subcategories in category (including OLD resources)
