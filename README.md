@@ -1,6 +1,24 @@
 # Katy Aid
 
+***Welcome to Katy!***
+
 A collection of resources available in the community of Katy.
+
+## How to Navigate
+
+**If you're on a computer:**
+
+- Click on any green area of youre screen and drag your mouse to move around
+
+- Use the `+` and `-` signs located at the top left of your screen to zoom in and out, respectively
+
+**If you're on a mobile device:**
+
+- Tap and hold any green area of your screen to move around by dragging one finger
+
+- Using two fingers, slide your finger away from or toward each other to zoom in and out, respectively
+
+When you find a category that you want to explore, simply click on its icon to open the popup with more details, and click the `Enter` button. If you ever want to return to the home page with all of the categories, you can always click the map icon at the top right corner of your screen.
 
 ## Local Development
 
