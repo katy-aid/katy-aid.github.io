@@ -198,7 +198,7 @@ for (let s = 0; s < database.data.length; s++) { // Iterates through each subcat
                     <div class="card">
                         <div id="text-${s}-${i}" class="text">
                             <h3>${r.name}</h3>
-                            <p>${r.description}</h3>
+                            <p>${r.description}</p>
                         </div>
                         <div id="site-img-${s}-${i}" class="site-img"></div>
                     </div>
@@ -212,7 +212,7 @@ for (let s = 0; s < database.data.length; s++) { // Iterates through each subcat
         // Access div containing current name and description
         // let text = document.querySelector(`#text-${s}-${i}`);
 
-        // Adjust height of resource site image based on overall size of name and desccription
+        // Adjust height of resource site image based on overall size of name and description
         // document.querySelector(`#site-img-${s}-${i}`).style.setProperty('height', `calc(100% - 20px - ${window.getComputedStyle(text).height})`);
     }
 }

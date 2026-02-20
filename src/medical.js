@@ -113,7 +113,7 @@ for (let s = 0; s < database.data.length; s++) { // Iterates through each subcat
                     <div class="card">
                         <div id="text-${s}-${i}" class="text">
                             <h3>${r.name}</h3>
-                            <p>${r.description}</h3>
+                            <p>${r.description}</p>
                         </div>
                         <div id="site-img-${s}-${i}" class="site-img"></div>
                     </div>

@@ -13,8 +13,9 @@
 - ✅ Add subcategory headings
 
 ## All Resources
-- Finish adding buttons for subcategories at top of each resource page (when applicable, or maybe automated?)
 - Try to optimize databases and populating logic?
+- Maybe try using a JSON file for database content?
+- ✅ Finish adding buttons for subcategories at top of each resource page (when applicable, or maybe automated?)
 - ✅ Restructure images and ids for resources within subcategories
     - ✅ Create image folders for each subcategory within its category folder
     - ✅ Start id counts from 0 for each subcategory
