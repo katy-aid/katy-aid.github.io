@@ -36,3 +36,6 @@ A collection of resources available in the community of Katy.
 - [Education icon](https://icons8.com/icon/40734/school-building)
 - [Immigration icon](https://www.vecteezy.com/vector-art/11138657-immigration-center-flat-design-long-shadow-yellow-color-icon-embassy-and-consulate-building-administrative-governmental-structure-earth-globe-over-public-building-vector-silhouette-illustration)
 - [Medical icon](https://www.iconexperience.com/g_collection/icons/?icon=hospital)
+- [Recreational icon](https://www.flaticon.com/free-icon/park_433102)
+- [Residences icon](https://www.flaticon.com/free-icon/house_10723211)
+- [Volunteer icon](https://www.trumanhabitat.org/individuals)
