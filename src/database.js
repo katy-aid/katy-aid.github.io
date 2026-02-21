@@ -726,7 +726,25 @@ if (document.querySelector('body').classList == 'home') {
     let highlights = document.querySelector('#highlights');
     for (i in database) { // i = property name in database object = individual category
         let subcat = database[i][Math.floor(Math.random() * database[i].length)];
-        let resource = subcat.resources[Math.floor(Math.random() * subcat.resources.length)];
-        console.log(resource.name);
+        let rIndex = Math.floor(Math.random() * subcat.resources.length);
+        let r = subcat.resources[rIndex];
+        highlights.innerHTML += `
+            <div class="resource">
+                <a href="${r.url}" target="_blank">
+                    <div class="card">
+                        <div id="text-${i}" class="text">
+                            <h3>${r.name}</h3>
+                            <p>${r.description}</p>
+                        </div>
+                        <div id="site-img-${i}" class="site-img"></div>
+                    </div>
+                </a>
+            </div>
+        `;
+
+        // Add image of resource site below its name and description
+        document.querySelector(`#site-img-${i}`).style.setProperty('background', `url("assets/img/sites/${i}/${subcat.title}/${rIndex}.png") no-repeat top center / cover`, 'important'); // background; imageURL repeat verticalPosition horizontalPosition / size
+
+        // Maybe flip order of name/description and image? (place image about name/description, but keep name above description; would have to change formatting for border radius)
     }
 }

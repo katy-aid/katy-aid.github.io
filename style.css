@@ -347,6 +347,17 @@ section.equal-btns button {
     margin: 10px auto;
 }
 
+section.hor-scroll {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    overflow-x: auto;
+}
+
+section.hor-scroll div.resource {
+    width: 100%;
+}
+
 section.references {
     text-indent: -36px;
     padding-left: 36px;
