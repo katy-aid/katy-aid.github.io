@@ -18,7 +18,7 @@ A collection of resources available in the community of Katy.
 
 - Using two fingers, slide your finger away from or toward each other to zoom in and out, respectively
 
-When you find a category that you want to explore, simply click on its icon to open the popup with more details, and click the `Enter` button. If you ever want to return to the home page with all of the categories, you can always click the map icon at the top right corner of your screen.
+When you find a category that you want to explore, simply click on its icon to open the popup with more details, and click the `View Resources` button. If you ever want to return to the home page, you can always click the map icon at the top left corner of your screen.
 
 ## Local Development
 

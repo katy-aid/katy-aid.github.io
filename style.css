@@ -286,6 +286,10 @@ iframe.doc {
     overflow: hidden;
 }
 
+iframe.sitemap {
+    height: 500px;
+}
+
 img.external-icon {
     height: 15px !important;
 }
@@ -468,7 +472,7 @@ small img.inline, button.inline img {
 #date-time {
     position: fixed;
     top: 20px;
-    left: 20px;
+    right: 20px;
     z-index: 1000;
     background-color: white;
     border: none;
@@ -486,7 +490,7 @@ small img.inline, button.inline img {
 #map-nav {
     position: fixed;
     top: 20px;
-    right: 20px;
+    left: 20px;
     z-index: 1000;
 }
 
