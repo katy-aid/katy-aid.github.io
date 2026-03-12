@@ -479,11 +479,7 @@ small img.inline, button.inline img {
     transition: all 0.3s;
 }
 
-.resource.highlight {
-    border-radius: 0px;
-}
-
-.resource.highlight div.text {
+.resource.highlight, .resource.highlight div.text, .resource.highlight div.site-img {
     border-radius: 0px;
 }
 
