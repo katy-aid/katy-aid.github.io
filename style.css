@@ -274,6 +274,7 @@ div.li img.inline.line-start {
 h2.subcategory {
     background-color: var(--red);
     color: white;
+    scroll-margin-top: 100px; /* adds vertical offset for anchor links */
 }
 
 iframe.doc {
@@ -321,12 +322,11 @@ p.btn {
 
 section.cat-btns {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
     align-items: center;
-    column-gap: 20px;
 }
 
 section.cat-btns a {
