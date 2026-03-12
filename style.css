@@ -104,9 +104,10 @@ header {
 }
 
 iframe {
-    margin: 20px 0px;
+    display: block;
+    margin: 20px auto;
     box-shadow: 0 3px 14px rgba(0,0,0,0.4);
-    width: 100%;
+    width: calc(100% - 100px);
     min-height: 300px;
     border: none;
     border-radius: 12px;
@@ -183,7 +184,7 @@ body, h1, h2, h3, h4, p, a, button, input, select, textarea, b, i {
     font-family: 'Poppins', BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-button:hover, .dropdown:hover, .resource:hover, video:hover, section.video iframe:hover, section.slides iframe:hover {
+button:hover, .dropdown:hover, .resource:not(.highlight):hover, video:hover, section.video iframe:hover, section.slides iframe:hover {
     box-shadow: 2px 4px 3px 2px rgba(0, 0, 0, 0.2);
     transform: scale(1.05);
     will-change: transform;
@@ -271,9 +272,15 @@ div.li img.inline.line-start {
     width: 30px !important;
 }
 
-h2.subcategory {
+h2.subcategory, h2.home-cats {
     background-color: var(--red);
     color: white;
+    scroll-margin-top: 100px; /* adds vertical offset for anchor links */
+}
+
+h2.home-cats {
+    margin: 50px auto 20px auto;
+    width: calc(100% - 100px);
 }
 
 iframe.doc {
@@ -286,6 +293,11 @@ iframe.doc {
     overflow: hidden;
 }
 
+iframe.sitemap {
+    height: 500px;
+    margin: 0px auto;
+}
+
 img.external-icon {
     height: 15px !important;
 }
@@ -296,7 +308,7 @@ img.inline {
 }
 
 img.inline.line-start {
-    margin: 0 20px 0 0px !important;
+    margin: 0 10px 0 0px !important;
 }
 
 img.inline.line-end {
@@ -317,12 +329,11 @@ p.btn {
 
 section.cat-btns {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
     align-items: center;
-    column-gap: 20px;
 }
 
 section.cat-btns a {
@@ -341,6 +352,17 @@ section.equal-btns button {
     display: block;
     width: 200px;
     margin: 10px auto;
+}
+
+section.hor-scroll {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    overflow-x: auto;
+}
+
+section.hor-scroll div.resource {
+    width: 100%;
 }
 
 section.references {
@@ -457,6 +479,10 @@ small img.inline, button.inline img {
     transition: all 0.3s;
 }
 
+.resource.highlight, .resource.highlight div.text, .resource.highlight div.site-img {
+    border-radius: 0px;
+}
+
 .resources {
     display: flex;
     flex-direction: column;
@@ -468,7 +494,7 @@ small img.inline, button.inline img {
 #date-time {
     position: fixed;
     top: 20px;
-    left: 20px;
+    right: 20px;
     z-index: 1000;
     background-color: white;
     border: none;
@@ -476,6 +502,10 @@ small img.inline, button.inline img {
     box-shadow: 0 3px 14px rgba(0,0,0,0.2);
     padding: 10px;
     opacity: 0.7;
+}
+
+#highlights {
+    margin: 0px auto;
 }
 
 #map {
@@ -486,7 +516,7 @@ small img.inline, button.inline img {
 #map-nav {
     position: fixed;
     top: 20px;
-    right: 20px;
+    left: 20px;
     z-index: 1000;
 }
 

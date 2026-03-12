@@ -5,7 +5,7 @@ var  bounds = [[0,0], [1000,1000]];
 const map = L.map('map', {
     crs: L.CRS.Simple, // REMINDER: CRS.Simple coordinates are in [y,x] format (L.latLng is opposite order from typical coordinates)
     minZoom: 0,
-    maxZoom: 2,
+    maxZoom: 1.5,
     maxBounds: bounds, // Prevents user from navigating outside grass
     maxBoundsViscosity: 1.0 // Re-enforces maxBounds
 });
@@ -129,7 +129,7 @@ Object.keys(markers).forEach(mName => {
                 <h3>${m.title}</h3>
                 <i>${m.hook}</i>
                 <p class="center">${m.description}</p>
-                <a href="${mName}.html"><button>View Resources</button></a>
+                <a href="${mName}.html" target="_blank"><button>View Resources</button></a>
             </div>
         `);
     }
@@ -140,7 +140,7 @@ Object.keys(markers).forEach(mName => {
                 <i>${m.hook}</i>
                 <p class="center">${m.description}</p>
             </div>
-        `); // <a href="references.html"><button>View References</button></a>
+        `); // <a href="index.html" target="_blank"><button>Return to Home</button></a>
     }
 });
 

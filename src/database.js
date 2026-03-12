@@ -683,38 +683,76 @@ const database = {
 
 };
 
-// Populate page with corresponding resources
-let cat = document.querySelector('body').classList; // Gets name of current page's category
-let data = database[`${cat}`];
-for (let s = 0; s < data.length; s++) { // Iterates through each subcategory object within category
-    let subcat = data[s];
-    document.querySelector(`section.${cat}`).innerHTML += `<h2 class="subcategory" id="subcategory-${s}">${subcat.title}</h2>`;
-    if (data.length > 1) {
-        document.querySelector(`section.cat-btns`).innerHTML += `<a href="#subcategory-${s}"><button>${subcat.title}</button></a>`;
-    }
-    for (let i = 0; i < subcat.resources.length; i++) { // Iterates through each resource within subcategory
-        let r = subcat.resources[i];
-        document.querySelector(`section.${cat}`).innerHTML += `
-            <div class="resource">
-                <a href="${r.url}" target="_blank">
-                    <div class="card">
-                        <div id="text-${s}-${i}" class="text">
-                            <h3>${r.name}</h3>
-                            <p>${r.description}</p>
+// Populate individual category pages with corresponding resources
+if (document.querySelector('body').classList == 'individual-cat') {
+    let cat = document.querySelector('body').id; // Gets name of current page's category
+    let data = database[`${cat}`];
+    for (let s = 0; s < data.length; s++) { // Gets name of current page's category
+        let subcat = data[s];
+        document.querySelector(`section.${cat}`).innerHTML += `<h2 class="subcategory" id="subcategory-${s}">${subcat.title}</h2>`;
+        if (data.length > 1) {
+            document.querySelector(`section.cat-btns`).innerHTML += `<a href="#subcategory-${s}"><button>${subcat.title}</button></a>`;
+        }
+        for (let i = 0; i < subcat.resources.length; i++) { // Iterates through each resource within subcategory
+            let r = subcat.resources[i];
+            document.querySelector(`section.${cat}`).innerHTML += `
+                <div class="resource">
+                    <a href="${r.url}" target="_blank">
+                        <div class="card">
+                            <div id="text-${s}-${i}" class="text">
+                                <h3>${r.name}</h3>
+                                <p>${r.description}</p>
+                            </div>
+                            <div id="site-img-${s}-${i}" class="site-img"></div>
                         </div>
-                        <div id="site-img-${s}-${i}" class="site-img"></div>
+                    </a>
+                </div>
+            `;
+
+            // Add image of resource site below its name and description
+            document.querySelector(`#site-img-${s}-${i}`).style.setProperty('background', `url("assets/img/sites/${cat}/${subcat.title}/${i}.png") no-repeat top center / cover`, 'important'); // background: imageURL repeat verticalPosition horizontalPosition / size
+
+            // Access div containing current name and description (for future reference, may implement in another way later)
+            // let text = document.querySelector(`#text-${s}-${i}`);
+
+            // Adjust height of resource site image based on overral size of name and description (for future reference, may implement in another way later)
+            // document.querySelector(`#site-img-${s}-${i}`).style.setProperty('height', `calc(100% - 20px - ${window.getComputedStyle(text).height})`);
+        }
+    }
+}
+
+// Populate home page with highlights
+if (document.querySelector('body').classList == 'home') {
+    let highlights = document.querySelector('#highlights');
+    for (i in database) { // i = property name in database object = individual category
+        let subcat = database[i][Math.floor(Math.random() * database[i].length)];
+        let rIndex = Math.floor(Math.random() * subcat.resources.length);
+        let r = subcat.resources[rIndex];
+        highlights.innerHTML += `
+            <div class="resource highlight">
+                <a href="${r.url}" target="_blank">
+                    <div id="card-${i}" class="card">
+                        <div id="site-img-${i}" class="site-img"></div>
+                        <div id="text-${i}" class="text">
+                            <h3>${r.name}</h3>
+                        </div>
                     </div>
                 </a>
             </div>
         `;
 
         // Add image of resource site below its name and description
-        document.querySelector(`#site-img-${s}-${i}`).style.setProperty('background', `url("assets/img/sites/${cat}/${subcat.title}/${i}.png") no-repeat top center / cover`, 'important'); // background: imageURL repeat verticalPosition horizontalPosition / size
+        document.querySelector(`#site-img-${i}`).style.setProperty('background', `url("assets/img/sites/${i}/${subcat.title}/${rIndex}.png") no-repeat top center / cover`, 'important'); // background; imageURL repeat verticalPosition horizontalPosition / size
 
-        // Access div containing current name and description (for future reference, may implement in another way later)
-        // let text = document.querySelector(`#text-${s}-${i}`);
+        // Adjust width of current card based on width of highlights section
+        document.querySelector(`#card-${i}`).style.setProperty('width', `${window.getComputedStyle(highlights).width}`);
 
-        // Adjust height of resource site image based on overall size of name and description (for future reference, may implement in another way later)
-        // document.querySelector(`#site-img-${s}-${i}`).style.setProperty('height', `calc(100% - 20px - ${window.getComputedStyle(text).height})`);
+        /*
+        TO-DO LIST
+        - Overlay name over site image
+            - Maybe use position property to anchor h3 to bottom left corner of div
+            - Have semi-transparent gray background behind h3
+        - Potentially remove box-shadow of resources
+        */
     }
 }
