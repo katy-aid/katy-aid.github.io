@@ -275,6 +275,8 @@ h2.subcategory {
     background-color: var(--red);
     color: white;
     scroll-margin-top: 100px; /* adds vertical offset for anchor links */
+    margin: auto;
+    width: calc(100% - 100px);
 }
 
 iframe.doc {
@@ -502,7 +504,7 @@ small img.inline, button.inline img {
 }
 
 #highlights {
-    margin: 40px auto;
+    margin: 0px auto 40px auto;
 }
 
 #map {
