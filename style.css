@@ -183,7 +183,7 @@ body, h1, h2, h3, h4, p, a, button, input, select, textarea, b, i {
     font-family: 'Poppins', BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-button:hover, .dropdown:hover, .resource:hover, video:hover, section.video iframe:hover, section.slides iframe:hover {
+button:hover, .dropdown:hover, .resource:not(.highlight):hover, video:hover, section.video iframe:hover, section.slides iframe:hover {
     box-shadow: 2px 4px 3px 2px rgba(0, 0, 0, 0.2);
     transform: scale(1.05);
     will-change: transform;
@@ -269,10 +269,6 @@ div.li {
 
 div.li img.inline.line-start {
     width: 30px !important;
-}
-
-div.resource.highlight div.text {
-    border-radius: 0px 0px 12px 12px;
 }
 
 h2.subcategory {
@@ -476,6 +472,14 @@ small img.inline, button.inline img {
     transition: all 0.3s;
 }
 
+.resource.highlight {
+    border-radius: 0px;
+}
+
+.resource.highlight div.text {
+    border-radius: 0px;
+}
+
 .resources {
     display: flex;
     flex-direction: column;
@@ -495,6 +499,10 @@ small img.inline, button.inline img {
     box-shadow: 0 3px 14px rgba(0,0,0,0.2);
     padding: 10px;
     opacity: 0.7;
+}
+
+#highlights {
+    margin: 40px auto;
 }
 
 #map {

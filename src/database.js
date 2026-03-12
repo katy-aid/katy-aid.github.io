@@ -731,7 +731,7 @@ if (document.querySelector('body').classList == 'home') {
         highlights.innerHTML += `
             <div class="resource highlight">
                 <a href="${r.url}" target="_blank">
-                    <div class="card">
+                    <div id="card-${i}" class="card">
                         <div id="site-img-${i}" class="site-img"></div>
                         <div id="text-${i}" class="text">
                             <h3>${r.name}</h3>
@@ -743,6 +743,9 @@ if (document.querySelector('body').classList == 'home') {
 
         // Add image of resource site below its name and description
         document.querySelector(`#site-img-${i}`).style.setProperty('background', `url("assets/img/sites/${i}/${subcat.title}/${rIndex}.png") no-repeat top center / cover`, 'important'); // background; imageURL repeat verticalPosition horizontalPosition / size
+
+        // Adjust width of current card based on width of highlights section
+        document.querySelector(`#card-${i}`).style.setProperty('width', `${window.getComputedStyle(highlights).width}`);
 
         /*
         TO-DO LIST
