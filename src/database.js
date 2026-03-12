@@ -729,14 +729,13 @@ if (document.querySelector('body').classList == 'home') {
         let rIndex = Math.floor(Math.random() * subcat.resources.length);
         let r = subcat.resources[rIndex];
         highlights.innerHTML += `
-            <div class="resource">
+            <div class="resource highlight">
                 <a href="${r.url}" target="_blank">
                     <div class="card">
+                        <div id="site-img-${i}" class="site-img"></div>
                         <div id="text-${i}" class="text">
                             <h3>${r.name}</h3>
-                            <p>${r.description}</p>
                         </div>
-                        <div id="site-img-${i}" class="site-img"></div>
                     </div>
                 </a>
             </div>
@@ -745,6 +744,11 @@ if (document.querySelector('body').classList == 'home') {
         // Add image of resource site below its name and description
         document.querySelector(`#site-img-${i}`).style.setProperty('background', `url("assets/img/sites/${i}/${subcat.title}/${rIndex}.png") no-repeat top center / cover`, 'important'); // background; imageURL repeat verticalPosition horizontalPosition / size
 
-        // Maybe flip order of name/description and image? (place image about name/description, but keep name above description; would have to change formatting for border radius)
+        /*
+        TO-DO LIST
+        - Overlay name over site image
+            - Maybe use position property to anchor h3 to bottom left corner of div
+            - Have semi-transparent gray background behind h3
+        */
     }
 }

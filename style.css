@@ -271,6 +271,10 @@ div.li img.inline.line-start {
     width: 30px !important;
 }
 
+div.resource.highlight div.text {
+    border-radius: 0px 0px 12px 12px;
+}
+
 h2.subcategory {
     background-color: var(--red);
     color: white;
