@@ -104,9 +104,10 @@ header {
 }
 
 iframe {
-    margin: 20px 0px;
+    display: block;
+    margin: 20px auto;
     box-shadow: 0 3px 14px rgba(0,0,0,0.4);
-    width: 100%;
+    width: calc(100% - 100px);
     min-height: 300px;
     border: none;
     border-radius: 12px;
@@ -271,11 +272,14 @@ div.li img.inline.line-start {
     width: 30px !important;
 }
 
-h2.subcategory {
+h2.subcategory, h2.home-cats {
     background-color: var(--red);
     color: white;
     scroll-margin-top: 100px; /* adds vertical offset for anchor links */
-    margin: auto;
+}
+
+h2.home-cats {
+    margin: 50px auto 0px auto;
     width: calc(100% - 100px);
 }
 
@@ -291,6 +295,7 @@ iframe.doc {
 
 iframe.sitemap {
     height: 500px;
+    margin: 0px auto;
 }
 
 img.external-icon {
@@ -504,7 +509,7 @@ small img.inline, button.inline img {
 }
 
 #highlights {
-    margin: 0px auto 40px auto;
+    margin: 0px auto;
 }
 
 #map {

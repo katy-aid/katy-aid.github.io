@@ -752,6 +752,7 @@ if (document.querySelector('body').classList == 'home') {
         - Overlay name over site image
             - Maybe use position property to anchor h3 to bottom left corner of div
             - Have semi-transparent gray background behind h3
+        - Potentially remove box-shadow of resources
         */
     }
 }
