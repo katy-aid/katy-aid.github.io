@@ -1,5 +1,12 @@
 # Planning
 
+## README
+- ✅ Personal reflection on (with no AI usage):
+    - ✅ What your project is (## About: a website that serves as a community resource hub to highlight resources available to residents within the community of Katy)
+    - ✅ Why you made it (## About: Webmaster competition for Technology Student Association, entry for 2026 Gulf Coast Regional Conference of Texas TSA)
+    - ✅ How you made it (## Behind the Website)
+    - ✅ What you struggled with/what you learned (### Struggles and Lessons)
+
 ## General
 - Reorganize html pages in folders
     - Maybe use if statements (class list of body tags) to determine where current page is in folder structure in relation to images and links
